@@ -9,6 +9,9 @@ Munajat adalah Progressive Web App untuk dzikir setelah sholat, doa tematik, kal
 - PWA offline-first via Serwist
 - IndexedDB via Dexie untuk progress, settings, journal, dan statistik
 - Guided dzikir setelah sholat dengan counter persistent
+- Dzikir pagi & petang dan rangkaian doa penutup (ma'tsur Qur'ani, tradisi berlabel, dan opsi doa sunnah shahih)
+- Pilihan gaya penutup (`closingStyle`: ma'tsur/tradisi) dan toggle doa sunnah, netral manhaj
+- Ikon PWA PNG (apple-touch + maskable) di-generate via `npm run icons`
 - Doa sesuai hati dengan kurasi deterministik dari database doa
 - Jelajah doa dengan search/filter
 - Kalender Hijriah offline dan halaman hari istimewa
@@ -50,3 +53,9 @@ Tidak ada environment variable wajib. Semua data user disimpan lokal di browser.
 ## Catatan Konten
 
 Semua doa yang ditampilkan berasal dari seed database statis di `data/doa`. Aplikasi tidak menghasilkan teks doa baru. Untuk penambahan konten, sertakan sumber yang dapat dilacak dan prioritaskan riwayat shahih/hasan.
+
+Segmen rangkaian penutup **tradisi** ([data/doa/doa-penutup-tradisi.json](data/doa/doa-penutup-tradisi.json)) diberi label sebagai kompilasi wirit (bukan satu riwayat tunggal) dan masih perlu **verifikasi teks Arab manual** sebelum publikasi (lihat `catatanVerifikasi` tiap entri).
+
+## Rancangan Lanjutan
+
+Rancangan sinkronisasi antar-perangkat yang *end-to-end encrypted* dan kompatibel Vercel free tier ada di [docs/sync-e2e-design.md](docs/sync-e2e-design.md). Belum diimplementasi; sifatnya opt-in dan zero-knowledge agar tetap menjaga prinsip privacy-first.
