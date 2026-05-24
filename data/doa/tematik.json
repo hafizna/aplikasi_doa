@@ -305,5 +305,356 @@
       "kitabSumber": "Shahih Muslim"
     },
     "tags": ["kesembuhan", "ruqyah"]
+  },
+  {
+    "id": "tematik-tobat-musa-qashash",
+    "judul": "Doa Nabi Musa memohon ampun",
+    "kategori": "doa-tematik",
+    "arab": "رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي",
+    "latin": "Rabbi inni zhalamtu nafsi faghfir li.",
+    "terjemah": "Ya Tuhanku, sesungguhnya aku telah menzalimi diriku sendiri, maka ampunilah aku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Qashash: 16",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["28:16"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["tobat", "ampunan", "quran"]
+  },
+  {
+    "id": "tematik-tobat-istighfar-hayyul-qayyum",
+    "judul": "Istighfar yang menggugurkan dosa",
+    "kategori": "doa-tematik",
+    "arab": "أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ",
+    "latin": "Astaghfirullahalladzi la ilaha illa huwal-hayyul-qayyumu wa atubu ilaih.",
+    "terjemah": "Aku memohon ampun kepada Allah yang tidak ada tuhan selain Dia, Yang Mahahidup lagi terus mengurus makhluk-Nya, dan aku bertobat kepada-Nya.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 1517, Tirmidzi no. 3577",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Abu Dawud, Sunan Tirmidzi"
+    },
+    "tags": ["tobat", "ampunan"],
+    "keutamaan": "Diampuni dosanya walaupun ia pernah lari dari medan perang."
+  },
+  {
+    "id": "tematik-tobat-ighfir-dzanbi-kullah",
+    "judul": "Mohon ampun atas seluruh dosa",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ",
+    "latin": "Allahummaghfir li dzanbi kullahu, diqqahu wa jillahu, wa awwalahu wa akhirahu, wa 'alaniyatahu wa sirrahu.",
+    "terjemah": "Ya Allah, ampunilah seluruh dosaku: yang kecil dan yang besar, yang awal dan yang akhir, yang tampak dan yang tersembunyi.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 483",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["tobat", "ampunan"]
+  },
+  {
+    "id": "tematik-tobat-rabbana-amanna",
+    "judul": "Pengakuan iman & mohon ampun",
+    "kategori": "doa-tematik",
+    "arab": "رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ",
+    "latin": "Rabbana innana amanna faghfir lana dzunubana wa qina 'adzaban-nar.",
+    "terjemah": "Ya Tuhan kami, sesungguhnya kami telah beriman, maka ampunilah dosa-dosa kami dan peliharalah kami dari azab neraka.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Ali 'Imran: 16",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["3:16"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["tobat", "ampunan", "dunia-akhirat", "quran"]
+  },
+  {
+    "id": "tematik-rezeki-ikfini-halalik",
+    "judul": "Dicukupkan dengan yang halal",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+    "latin": "Allahumma ikfini bihalalika 'an haramika, wa aghnini bifadhlika 'amman siwak.",
+    "terjemah": "Ya Allah, cukupkanlah aku dengan rezeki-Mu yang halal sehingga tidak butuh kepada yang haram, dan kayakanlah aku dengan karunia-Mu sehingga tidak bergantung kepada selain Engkau.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Tirmidzi no. 3563",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Tirmidzi"
+    },
+    "tags": ["rezeki", "kebutuhan"]
+  },
+  {
+    "id": "tematik-rezeki-huda-tuqa-ghina",
+    "judul": "Petunjuk, ketakwaan, & kecukupan",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+    "latin": "Allahumma inni as'alukal-huda wat-tuqa wal-'afafa wal-ghina.",
+    "terjemah": "Ya Allah, aku memohon kepada-Mu petunjuk, ketakwaan, terjaganya kehormatan, dan kecukupan.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 2721",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["rezeki", "kebutuhan", "dunia-akhirat"]
+  },
+  {
+    "id": "tematik-perlindungan-hasbiyallah",
+    "judul": "Cukuplah Allah bagiku",
+    "kategori": "doa-tematik",
+    "arab": "حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+    "latin": "Hasbiyallahu la ilaha illa huwa 'alaihi tawakkaltu wa huwa rabbul-'arsyil-'azhim.",
+    "terjemah": "Cukuplah Allah bagiku, tidak ada tuhan selain Dia. Kepada-Nya aku bertawakal, dan Dia Tuhan pemilik 'Arsy yang agung.",
+    "pengulangan": 7,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. At-Taubah: 129",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["9:129"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["perlindungan", "kesulitan", "quran"],
+    "keutamaan": "Siapa membacanya tujuh kali pagi dan petang, Allah cukupkan urusan yang menyusahkannya.",
+    "konteks": "Dibaca tujuh kali, baik saat pagi/petang maupun ketika menghadapi kesulitan."
+  },
+  {
+    "id": "tematik-perlindungan-hammi-hazan",
+    "judul": "Berlindung dari gelisah & lilitan utang",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ",
+    "latin": "Allahumma inni a'udzu bika minal-hammi wal-hazan, wal-'ajzi wal-kasal, wal-bukhli wal-jubn, wa dhala'id-dain wa ghalabatir-rijal.",
+    "terjemah": "Ya Allah, aku berlindung kepada-Mu dari gelisah dan sedih, dari lemah dan malas, dari kikir dan pengecut, dari lilitan utang dan tekanan orang lain.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 6369",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari"
+    },
+    "tags": ["perlindungan", "kesulitan", "rezeki"]
+  },
+  {
+    "id": "tematik-perlindungan-hamazat-syayathin",
+    "judul": "Berlindung dari bisikan setan",
+    "kategori": "doa-tematik",
+    "arab": "رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ، وَأَعُوذُ بِكَ رَبِّ أَنْ يَحْضُرُونِ",
+    "latin": "Rabbi a'udzu bika min hamazatisy-syayathin, wa a'udzu bika rabbi an yahdhurun.",
+    "terjemah": "Ya Tuhanku, aku berlindung kepada-Mu dari bisikan-bisikan setan, dan aku berlindung kepada-Mu, ya Tuhanku, agar mereka tidak mendekatiku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Mu'minun: 97-98",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["23:97", "23:98"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["perlindungan", "cemas", "quran"]
+  },
+  {
+    "id": "tematik-perlindungan-zawali-nimah",
+    "judul": "Berlindung dari hilangnya nikmat",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ",
+    "latin": "Allahumma inni a'udzu bika min zawali ni'matik, wa tahawwuli 'afiyatik, wa fuja'ati niqmatik, wa jami'i sakhatik.",
+    "terjemah": "Ya Allah, aku berlindung kepada-Mu dari hilangnya nikmat-Mu, berubahnya kesehatan yang Engkau berikan, datangnya azab-Mu secara tiba-tiba, dan segala kemurkaan-Mu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 2739",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["perlindungan", "syukur"]
+  },
+  {
+    "id": "tematik-perlindungan-jahdil-bala",
+    "judul": "Berlindung dari beratnya cobaan",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ جَهْدِ الْبَلَاءِ، وَدَرَكِ الشَّقَاءِ، وَسُوءِ الْقَضَاءِ، وَشَمَاتَةِ الْأَعْدَاءِ",
+    "latin": "Allahumma inni a'udzu bika min jahdil-bala', wa darakisy-syaqa', wa su'il-qadha', wa syamatatil-a'da'.",
+    "terjemah": "Ya Allah, aku berlindung kepada-Mu dari beratnya cobaan, terhempas dalam kesengsaraan, takdir yang buruk, dan cibiran musuh.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 6347",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari"
+    },
+    "tags": ["perlindungan", "kesulitan"]
+  },
+  {
+    "id": "tematik-ilmu-la-sahla",
+    "judul": "Memohon kemudahan urusan",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهُ سَهْلًا، وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلًا",
+    "latin": "Allahumma la sahla illa ma ja'altahu sahla, wa anta taj'alul-hazna idza syi'ta sahla.",
+    "terjemah": "Ya Allah, tidak ada kemudahan kecuali yang Engkau jadikan mudah, dan Engkau menjadikan yang sulit, jika Engkau kehendaki, menjadi mudah.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Ibnu Hibban no. 974",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Ibnu Hibban"
+    },
+    "tags": ["ilmu", "kesulitan", "amal"]
+  },
+  {
+    "id": "tematik-ilmu-infani-bima-allamtani",
+    "judul": "Manfaatkan ilmu & tambahkan ilmu",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا",
+    "latin": "Allahumma infa'ni bima 'allamtani, wa 'allimni ma yanfa'uni, wa zidni 'ilma.",
+    "terjemah": "Ya Allah, berilah manfaat dengan ilmu yang Engkau ajarkan kepadaku, ajarkanlah aku apa yang bermanfaat bagiku, dan tambahkanlah ilmu kepadaku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Tirmidzi no. 3599, Ibnu Majah no. 3833",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Tirmidzi, Sunan Ibnu Majah"
+    },
+    "tags": ["ilmu", "amal"]
+  },
+  {
+    "id": "tematik-ilmu-audzu-ilm-la-yanfa",
+    "judul": "Berlindung dari ilmu tak bermanfaat",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عِلْمٍ لَا يَنْفَعُ، وَمِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَمِنْ دَعْوَةٍ لَا يُسْتَجَابُ لَهَا",
+    "latin": "Allahumma inni a'udzu bika min 'ilmin la yanfa', wa min qalbin la yakhsya', wa min nafsin la tasyba', wa min da'watin la yustajabu laha.",
+    "terjemah": "Ya Allah, aku berlindung kepada-Mu dari ilmu yang tidak bermanfaat, hati yang tidak khusyuk, jiwa yang tidak pernah puas, dan doa yang tidak dikabulkan.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 2722",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["ilmu", "perlindungan"]
+  },
+  {
+    "id": "tematik-dunia-akhirat-aslih-li-dini",
+    "judul": "Perbaiki agama, dunia, & akhirat",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ أَصْلِحْ لِي دِينِي الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِي الَّتِي فِيهَا مَعَادِي، وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ، وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ",
+    "latin": "Allahumma aslih li dini alladzi huwa 'ishmatu amri, wa aslih li dunyaya allati fiha ma'asyi, wa aslih li akhirati allati fiha ma'adi, waj'alil-hayata ziyadatan li fi kulli khair, waj'alil-mauta rahatan li min kulli syarr.",
+    "terjemah": "Ya Allah, perbaikilah agamaku yang menjadi penjaga urusanku, perbaikilah duniaku yang menjadi tempat penghidupanku, perbaikilah akhiratku yang menjadi tempat kembaliku. Jadikanlah hidup sebagai tambahan kebaikan bagiku, dan jadikanlah kematian sebagai istirahat bagiku dari segala keburukan.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 2720",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["dunia-akhirat", "syukur", "perlindungan"]
+  },
+  {
+    "id": "tematik-dunia-akhirat-afwa-afiyah",
+    "judul": "Mohon maaf & keselamatan dunia-akhirat",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+    "latin": "Allahumma inni as'alukal-'afwa wal-'afiyata fid-dunya wal-akhirah.",
+    "terjemah": "Ya Allah, aku memohon kepada-Mu ampunan dan keselamatan di dunia dan akhirat.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Ibnu Majah no. 3871",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Ibnu Majah"
+    },
+    "tags": ["dunia-akhirat", "syukur", "perlindungan"]
+  },
+  {
+    "id": "tematik-dunia-akhirat-jannah-naar",
+    "judul": "Memohon surga, berlindung dari neraka",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ",
+    "latin": "Allahumma inni as'alukal-jannata wa a'udzu bika minan-nar.",
+    "terjemah": "Ya Allah, aku memohon kepada-Mu surga, dan aku berlindung kepada-Mu dari neraka.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 792",
+      "derajat": "shahih",
+      "kitabSumber": "Sunan Abu Dawud"
+    },
+    "tags": ["dunia-akhirat", "berharap"]
+  },
+  {
+    "id": "tematik-kesembuhan-as-alullahal-azhim",
+    "judul": "Doa untuk orang sakit (7x)",
+    "kategori": "doa-tematik",
+    "arab": "أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ",
+    "latin": "As'alullahal-'azhima rabbal-'arsyil-'azhimi an yasyfiyak.",
+    "terjemah": "Aku memohon kepada Allah Yang Mahaagung, Tuhan pemilik 'Arsy yang agung, agar menyembuhkanmu.",
+    "pengulangan": 7,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Tirmidzi no. 2083, Abu Dawud no. 3106",
+      "derajat": "shahih",
+      "kitabSumber": "Sunan Tirmidzi, Sunan Abu Dawud"
+    },
+    "tags": ["kesembuhan", "keluarga"],
+    "keutamaan": "Dibaca tujuh kali di sisi orang sakit yang belum tiba ajalnya, niscaya ia disembuhkan.",
+    "konteks": "Dibaca tujuh kali ketika menjenguk orang sakit."
+  },
+  {
+    "id": "tematik-kesembuhan-la-bas-thahur",
+    "judul": "Menghibur orang sakit",
+    "kategori": "doa-tematik",
+    "arab": "لَا بَأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ",
+    "latin": "La ba'sa thahurun in sya'allah.",
+    "terjemah": "Tidak mengapa, semoga (sakit ini) menjadi pembersih dosa, insya Allah.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 3616",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari"
+    },
+    "tags": ["kesembuhan", "keluarga"],
+    "konteks": "Diucapkan Nabi ﷺ ketika menjenguk orang sakit untuk menenangkan."
+  },
+  {
+    "id": "tematik-keturunan-zakaria-maryam",
+    "judul": "Doa Zakaria memohon penerus",
+    "kategori": "doa-tematik",
+    "arab": "فَهَبْ لِي مِنْ لَدُنْكَ وَلِيًّا، يَرِثُنِي وَيَرِثُ مِنْ آلِ يَعْقُوبَ ۖ وَاجْعَلْهُ رَبِّ رَضِيًّا",
+    "latin": "Fahab li min ladunka waliyya, yaritsuni wa yaritsu min ali ya'qub, waj'alhu rabbi radhiyya.",
+    "terjemah": "Maka anugerahkanlah kepadaku dari sisi-Mu seorang penerus, yang mewarisi aku dan mewarisi sebagian keluarga Ya'qub; dan jadikanlah ia, ya Tuhanku, seorang yang diridai.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Maryam: 5-6",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["19:5", "19:6"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["keturunan", "keluarga", "quran"]
   }
 ]
