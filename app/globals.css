@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 40 47% 94%;
+  --foreground: 176 26% 14%;
+  --card: 40 52% 97%;
+  --card-foreground: 176 26% 14%;
+  --primary: 174 49% 18%;
+  --primary-foreground: 43 55% 94%;
+  --secondary: 37 30% 84%;
+  --secondary-foreground: 174 49% 18%;
+  --muted: 39 32% 88%;
+  --muted-foreground: 176 14% 38%;
+  --accent: 44 55% 62%;
+  --accent-foreground: 174 49% 15%;
+  --border: 38 26% 78%;
+  --input: 38 26% 78%;
+  --ring: 174 49% 26%;
+  --font-sans: "Geist Sans";
+  --font-arabic: "Amiri";
+}
+
+.dark {
+  --background: 174 26% 10%;
+  --foreground: 42 36% 91%;
+  --card: 174 24% 13%;
+  --card-foreground: 42 36% 91%;
+  --primary: 42 54% 72%;
+  --primary-foreground: 174 29% 11%;
+  --secondary: 173 21% 20%;
+  --secondary-foreground: 42 36% 91%;
+  --muted: 173 18% 18%;
+  --muted-foreground: 42 18% 72%;
+  --accent: 42 52% 58%;
+  --accent-foreground: 174 29% 11%;
+  --border: 173 18% 25%;
+  --input: 173 18% 25%;
+  --ring: 42 52% 58%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 30% 0%, rgba(214, 183, 92, 0.16), transparent 32rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.arabic-text {
+  direction: rtl;
+  line-height: 2.25;
+  text-align: right;
+}
+
+.soft-enter {
+  animation: soft-enter 220ms ease-out both;
+}
+
+@keyframes soft-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

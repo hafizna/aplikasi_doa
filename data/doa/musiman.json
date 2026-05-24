@@ -1,0 +1,91 @@
+[
+  {
+    "id": "musiman-arafah-tahlil",
+    "judul": "Dzikir utama Hari Arafah",
+    "kategori": "doa-musiman",
+    "arab": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+    "latin": "La ilaha illallahu wahdahu la syarika lah, lahul-mulku wa lahul-hamdu, wa huwa 'ala kulli syai'in qadir.",
+    "terjemah": "Tidak ada sesembahan yang berhak disembah selain Allah semata, tidak ada sekutu bagi-Nya. Milik-Nya kerajaan dan pujian, dan Dia Mahakuasa atas segala sesuatu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Tirmidzi no. 3585",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan At-Tirmidzi"
+    },
+    "tags": ["arafah", "dzulhijjah", "tauhid", "musiman"],
+    "keutamaan": "Disebutkan dalam riwayat sebagai dzikir terbaik yang dibaca Nabi dan para nabi sebelum beliau pada Hari Arafah."
+  },
+  {
+    "id": "musiman-lailatul-qadar",
+    "judul": "Doa Lailatul Qadar",
+    "kategori": "doa-musiman",
+    "arab": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+    "latin": "Allahumma innaka 'afuwwun tuhibbul-'afwa fa'fu 'anni.",
+    "terjemah": "Ya Allah, sesungguhnya Engkau Maha Pemaaf dan mencintai pemaafan, maka maafkanlah aku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Tirmidzi no. 3513 dan Ibnu Majah no. 3850",
+      "derajat": "shahih",
+      "kitabSumber": "Sunan At-Tirmidzi, Sunan Ibnu Majah"
+    },
+    "tags": ["ramadan", "lailatul-qadar", "ampunan", "musiman"],
+    "konteks": "Diajarkan kepada Aisyah radhiyallahu 'anha untuk dibaca ketika mengetahui Lailatul Qadar."
+  },
+  {
+    "id": "musiman-berbuka-puasa",
+    "judul": "Doa setelah berbuka puasa",
+    "kategori": "doa-musiman",
+    "arab": "ذَهَبَ الظَّمَأُ، وَابْتَلَّتِ الْعُرُوقُ، وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ",
+    "latin": "Dzahabazh-zhama'u wabtallatil-'uruqu wa tsabatal-ajru insya Allah.",
+    "terjemah": "Telah hilang rasa haus, urat-urat telah basah, dan pahala telah tetap insya Allah.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 2357",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Abu Dawud"
+    },
+    "tags": ["ramadan", "puasa", "berbuka", "musiman"]
+  },
+  {
+    "id": "musiman-ashura-puasa",
+    "judul": "Niat kebaikan pada Asyura",
+    "kategori": "doa-musiman",
+    "arab": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "latin": "Rabbana atina fid-dunya hasanah, wa fil-akhirati hasanah, wa qina 'adzaban-nar.",
+    "terjemah": "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, serta peliharalah kami dari azab neraka.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Baqarah: 201",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["2:201"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["asyura", "muharram", "puasa", "dunia-akhirat", "musiman"],
+    "konteks": "Tidak ada doa khusus Asyura yang ditetapkan di sini; app menampilkan doa Qurani umum dan amalan puasa dengan sumbernya."
+  },
+  {
+    "id": "musiman-shalawat-jumat",
+    "judul": "Shalawat pada hari Jumat",
+    "kategori": "doa-musiman",
+    "arab": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ",
+    "latin": "Allahumma shalli wa sallim 'ala nabiyyina Muhammad.",
+    "terjemah": "Ya Allah, limpahkanlah shalawat dan salam kepada Nabi kami Muhammad.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 1047",
+      "derajat": "shahih",
+      "kitabSumber": "Sunan Abu Dawud"
+    },
+    "tags": ["jumat", "shalawat", "musiman"],
+    "keutamaan": "Dalam riwayat disebutkan anjuran memperbanyak shalawat pada hari Jumat."
+  }
+]

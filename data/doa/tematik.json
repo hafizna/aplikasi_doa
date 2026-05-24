@@ -1,0 +1,309 @@
+[
+  {
+    "id": "tematik-tobat-sayyidul-istighfar",
+    "judul": "Sayyidul Istighfar",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+    "latin": "Allahumma anta rabbi la ilaha illa anta, khalaqtani wa ana 'abduka, wa ana 'ala 'ahdika wa wa'dika mastatha'tu. A'udzu bika min syarri ma shana'tu. Abu'u laka bini'matika 'alayya, wa abu'u laka bidzanbi, faghfir li fa innahu la yaghfirudz-dzunuba illa anta.",
+    "terjemah": "Ya Allah, Engkau Rabbku, tidak ada sesembahan yang berhak disembah selain Engkau. Engkau menciptakanku dan aku hamba-Mu...",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 6306",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari"
+    },
+    "tags": ["tobat", "ampunan", "pagi", "petang"]
+  },
+  {
+    "id": "tematik-tobat-adam",
+    "judul": "Doa Nabi Adam",
+    "kategori": "doa-tematik",
+    "arab": "رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+    "latin": "Rabbana zhalamna anfusana wa in lam taghfir lana wa tarhamna lanakunanna minal-khasirin.",
+    "terjemah": "Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami dan memberi rahmat kepada kami, niscaya kami termasuk orang-orang yang rugi.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-A'raf: 23",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["7:23"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["tobat", "ampunan", "quran"]
+  },
+  {
+    "id": "tematik-tobat-yunus",
+    "judul": "Doa Nabi Yunus",
+    "kategori": "doa-tematik",
+    "arab": "لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+    "latin": "La ilaha illa anta subhanaka inni kuntu minazh-zhalimin.",
+    "terjemah": "Tidak ada Tuhan selain Engkau. Mahasuci Engkau, sesungguhnya aku termasuk orang-orang yang zalim.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Anbiya: 87",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["21:87"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["tobat", "kesulitan", "quran"]
+  },
+  {
+    "id": "tematik-rezeki-ilmu-rezeki-amal",
+    "judul": "Ilmu bermanfaat dan rezeki baik",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
+    "latin": "Allahumma inni as'aluka 'ilman nafi'an, wa rizqan thayyiban, wa 'amalan mutaqabbalan.",
+    "terjemah": "Ya Allah, aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Ibnu Majah no. 925",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Ibnu Majah"
+    },
+    "tags": ["rezeki", "ilmu", "amal", "pagi"]
+  },
+  {
+    "id": "tematik-rezeki-nabi-musa",
+    "judul": "Doa Nabi Musa saat membutuhkan kebaikan",
+    "kategori": "doa-tematik",
+    "arab": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+    "latin": "Rabbi inni lima anzalta ilayya min khairin faqir.",
+    "terjemah": "Ya Tuhanku, sesungguhnya aku sangat memerlukan sesuatu kebaikan yang Engkau turunkan kepadaku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Qashash: 24",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["28:24"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["rezeki", "jodoh", "kebutuhan", "quran"]
+  },
+  {
+    "id": "tematik-rezeki-hidangan",
+    "judul": "Memohon rezeki dari Allah",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ رَبَّنَا أَنْزِلْ عَلَيْنَا مَائِدَةً مِنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِأَوَّلِنَا وَآخِرِنَا وَآيَةً مِنْكَ ۖ وَارْزُقْنَا وَأَنْتَ خَيْرُ الرَّازِقِينَ",
+    "latin": "Allahumma rabbana anzil 'alayna ma'idatam minas-sama'i takunu lana 'idan li awwalina wa akhirina wa ayatam minka, warzuqna wa anta khairur-raziqin.",
+    "terjemah": "Ya Allah Tuhan kami, turunkanlah kepada kami hidangan dari langit yang menjadi hari raya bagi kami dan menjadi tanda dari-Mu. Berilah kami rezeki, Engkaulah sebaik-baik pemberi rezeki.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Ma'idah: 114",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["5:114"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["rezeki", "quran"]
+  },
+  {
+    "id": "tematik-jodoh-keluarga-penyejuk",
+    "judul": "Keluarga penyejuk hati",
+    "kategori": "doa-tematik",
+    "arab": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+    "latin": "Rabbana hablana min azwajina wa dzurriyyatina qurrata a'yun, waj'alna lil-muttaqina imama.",
+    "terjemah": "Ya Tuhan kami, anugerahkanlah kepada kami pasangan dan keturunan sebagai penyejuk hati, dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Furqan: 74",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["25:74"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["jodoh", "keluarga", "keturunan", "quran"]
+  },
+  {
+    "id": "tematik-jodoh-nabi-musa",
+    "judul": "Kebaikan yang Allah turunkan",
+    "kategori": "doa-tematik",
+    "arab": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+    "latin": "Rabbi inni lima anzalta ilayya min khairin faqir.",
+    "terjemah": "Ya Tuhanku, sesungguhnya aku sangat memerlukan sesuatu kebaikan yang Engkau turunkan kepadaku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Qashash: 24",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["28:24"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["jodoh", "rezeki", "quran"]
+  },
+  {
+    "id": "tematik-jodoh-sakinah",
+    "judul": "Pasangan dan keturunan bertakwa",
+    "kategori": "doa-tematik",
+    "arab": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ",
+    "latin": "Rabbana hablana min azwajina wa dzurriyyatina qurrata a'yun.",
+    "terjemah": "Ya Tuhan kami, anugerahkanlah kepada kami pasangan dan keturunan sebagai penyejuk hati.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Furqan: 74",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["25:74"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["jodoh", "keluarga", "quran"]
+  },
+  {
+    "id": "tematik-keturunan-zakaria",
+    "judul": "Keturunan yang baik",
+    "kategori": "doa-tematik",
+    "arab": "رَبِّ هَبْ لِي مِنْ لَدُنْكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ",
+    "latin": "Rabbi hab li min ladunka dzurriyyatan thayyibah, innaka sami'ud-du'a.",
+    "terjemah": "Ya Tuhanku, berilah aku dari sisi-Mu keturunan yang baik. Sesungguhnya Engkau Maha Mendengar doa.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Ali 'Imran: 38",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["3:38"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["keturunan", "keluarga", "quran"]
+  },
+  {
+    "id": "tematik-keturunan-shalihin",
+    "judul": "Anak yang saleh",
+    "kategori": "doa-tematik",
+    "arab": "رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ",
+    "latin": "Rabbi hab li minash-shalihin.",
+    "terjemah": "Ya Tuhanku, anugerahkanlah kepadaku anak yang termasuk orang-orang saleh.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Ash-Shaffat: 100",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["37:100"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["keturunan", "quran"]
+  },
+  {
+    "id": "tematik-keturunan-zakaria-anbiya",
+    "judul": "Jangan biarkan aku sendiri",
+    "kategori": "doa-tematik",
+    "arab": "رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنْتَ خَيْرُ الْوَارِثِينَ",
+    "latin": "Rabbi la tadzarni fardan wa anta khairul-waritsin.",
+    "terjemah": "Ya Tuhanku, janganlah Engkau membiarkan aku hidup seorang diri, dan Engkaulah sebaik-baik pewaris.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Al-Anbiya: 89",
+      "kitabSumber": "Al-Qur'an"
+    },
+    "audio": {
+      "provider": "quran.com",
+      "recitationId": 7,
+      "verseKeys": ["21:89"],
+      "reciter": "Mishary Rashid Alafasy"
+    },
+    "tags": ["keturunan", "jodoh", "quran"]
+  },
+  {
+    "id": "tematik-kesembuhan-rabban-nas",
+    "judul": "Rabb manusia, hilangkan penyakit",
+    "kategori": "doa-tematik",
+    "arab": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
+    "latin": "Allahumma rabban-nas, adzhibil-ba's, isyfi antasy-syafi, la syifa'a illa syifa'uka, syifa'an la yughadiru saqama.",
+    "terjemah": "Ya Allah Rabb manusia, hilangkanlah penyakit. Sembuhkanlah, Engkaulah Yang Maha Menyembuhkan. Tidak ada kesembuhan kecuali kesembuhan dari-Mu, kesembuhan yang tidak meninggalkan penyakit.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 5743 dan Muslim no. 2191",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari, Shahih Muslim"
+    },
+    "tags": ["kesembuhan", "ruqyah", "keluarga"]
+  },
+  {
+    "id": "tematik-kesembuhan-bismillah-arqik",
+    "judul": "Ruqyah Jibril",
+    "kategori": "doa-tematik",
+    "arab": "بِاسْمِ اللَّهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللَّهُ يَشْفِيكَ، بِاسْمِ اللَّهِ أَرْقِيكَ",
+    "latin": "Bismillahi arqik, min kulli syai'in yu'dzik, min syarri kulli nafsin au 'aini hasid, Allahu yasyfik, bismillahi arqik.",
+    "terjemah": "Dengan nama Allah aku meruqyahmu, dari segala sesuatu yang menyakitimu, dari keburukan setiap jiwa atau mata orang yang dengki. Semoga Allah menyembuhkanmu. Dengan nama Allah aku meruqyahmu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 2186",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["kesembuhan", "ruqyah", "perlindungan"]
+  },
+  {
+    "id": "tematik-kesembuhan-asmaullah",
+    "judul": "Meletakkan tangan pada bagian sakit",
+    "kategori": "doa-tematik",
+    "arab": "بِسْمِ اللَّهِ",
+    "latin": "Bismillah.",
+    "terjemah": "Dengan nama Allah.",
+    "pengulangan": 3,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 2202",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["kesembuhan", "ruqyah"],
+    "konteks": "Dalam riwayat, dibaca tiga kali sambil meletakkan tangan pada bagian tubuh yang sakit, lalu dilanjutkan doa perlindungan tujuh kali."
+  },
+  {
+    "id": "tematik-kesembuhan-audzu",
+    "judul": "Berlindung dari sakit yang dirasakan",
+    "kategori": "doa-tematik",
+    "arab": "أَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ",
+    "latin": "A'udzu billahi wa qudratihi min syarri ma ajidu wa uhadzir.",
+    "terjemah": "Aku berlindung kepada Allah dan kekuasaan-Nya dari keburukan yang aku rasakan dan aku khawatirkan.",
+    "pengulangan": 7,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 2202",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim"
+    },
+    "tags": ["kesembuhan", "ruqyah"]
+  }
+]
