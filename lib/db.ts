@@ -15,6 +15,8 @@ const defaultSettings: UserSettings = {
   showLatin: true,
   showTranslation: true,
   theme: "auto",
+  closingStyle: "matsur",
+  includeSunnahDoa: false,
   journalEncryption: {
     enabled: false
   },

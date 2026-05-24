@@ -1,0 +1,85 @@
+[
+  {
+    "id": "doa-tradisi-pembuka-hamdalah",
+    "judul": "Pembuka: Hamdalah & pujian",
+    "kategori": "doa-harian",
+    "arab": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ، بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ، الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ، حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَهُ، يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ",
+    "latin": "A'udzu billahi minasy-syaithanir-rajim, bismillahir-rahmanir-rahim. Alhamdulillahi rabbil-'alamin, hamday yuwafi ni'amahu wa yukafi'u mazidah, ya rabbana lakal-hamdu kama yanbaghi lijalali wajhika wa 'azhimi sulthanik.",
+    "terjemah": "Aku berlindung kepada Allah dari setan yang terkutuk. Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam, pujian yang sepadan dengan nikmat-Nya dan menjamin tambahannya. Wahai Tuhan kami, bagi-Mu segala puji sebagaimana layak bagi keagungan wajah-Mu dan kebesaran kekuasaan-Mu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "atsar",
+      "referensi": "Lafaz \"hamdan yuwafi ni'amahu\": HR. Ibnu Majah no. 3801",
+      "kitabSumber": "Rangkaian wirid tradisi (jumhur)"
+    },
+    "tags": ["penutup", "rangkaian-tradisi", "pujian"],
+    "konteks": "Pembuka rangkaian doa penutup yang lazim dibaca dalam tradisi (jumhur/NU). Ini kompilasi wirid, bukan satu riwayat tunggal.",
+    "catatanVerifikasi": "Lafaz \"hamdan yuwafi ni'amahu wa yukafi'u mazidah\" diriwayatkan Ibnu Majah dan diperselisihkan kekuatannya. Verifikasi teks Arab dan status riwayat sebelum publikasi."
+  },
+  {
+    "id": "doa-tradisi-shalawat",
+    "judul": "Shalawat atas Nabi ﷺ",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ",
+    "latin": "Allahumma shalli wa sallim 'ala sayyidina Muhammadin wa 'ala ali sayyidina Muhammad.",
+    "terjemah": "Ya Allah, limpahkanlah shalawat dan salam kepada junjungan kami Nabi Muhammad dan keluarga beliau.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "Asal shalawat: HR. Bukhari no. 3370, Muslim no. 406",
+      "derajat": "shahih",
+      "kitabSumber": "Rangkaian wirid tradisi (jumhur)"
+    },
+    "tags": ["penutup", "rangkaian-tradisi", "shalawat"],
+    "konteks": "Bagian rangkaian tradisi. Penambahan kata \"sayyidina\" adalah ikhtilaf; lafaz tanpa \"sayyidina\" ada dalam riwayat shahih.",
+    "catatanVerifikasi": "Sajikan secara netral. Lafaz shalawat ibrahimiyah lengkap (Bukhari/Muslim) bisa jadi alternatif."
+  },
+  {
+    "id": "doa-tradisi-salamatan-fid-din",
+    "judul": "Allahumma inna nas'aluka salamatan fid-din",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ إِنَّا نَسْأَلُكَ سَلَامَةً فِي الدِّينِ، وَعَافِيَةً فِي الْجَسَدِ، وَزِيَادَةً فِي الْعِلْمِ، وَبَرَكَةً فِي الرِّزْقِ، وَتَوْبَةً قَبْلَ الْمَوْتِ، وَرَحْمَةً عِنْدَ الْمَوْتِ، وَمَغْفِرَةً بَعْدَ الْمَوْتِ",
+    "latin": "Allahumma inna nas'aluka salamatan fid-din, wa 'afiyatan fil-jasad, wa ziyadatan fil-'ilm, wa barakatan fir-rizq, wa taubatan qablal-maut, wa rahmatan 'indal-maut, wa maghfiratan ba'dal-maut.",
+    "terjemah": "Ya Allah, kami memohon kepada-Mu keselamatan dalam agama, kesehatan pada tubuh, tambahan ilmu, keberkahan rezeki, tobat sebelum mati, rahmat ketika mati, dan ampunan setelah mati.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "atsar",
+      "referensi": "Doa masyhur dalam tradisi; tidak bersandar pada satu hadis shahih spesifik",
+      "kitabSumber": "Rangkaian wirid tradisi (jumhur)"
+    },
+    "tags": ["penutup", "rangkaian-tradisi", "keselamatan"],
+    "konteks": "Inti rangkaian doa penutup tradisi. Maknanya baik dan banyak dibaca, namun bukan lafaz dari satu riwayat shahih tertentu.",
+    "catatanVerifikasi": "Beri label jelas bahwa ini doa tradisi (bukan hadis spesifik). Verifikasi teks Arab terhadap rujukan wirid yang dipakai komunitas target."
+  },
+  {
+    "id": "doa-tradisi-doa-orang-tua",
+    "judul": "Doa untuk kedua orang tua",
+    "kategori": "doa-harian",
+    "arab": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+    "latin": "Rabbighfir li wa liwalidayya warhamhuma kama rabbayani shaghira.",
+    "terjemah": "Tuhanku, ampunilah aku dan kedua orang tuaku, dan sayangilah keduanya sebagaimana mereka mendidikku sewaktu kecil.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "Bagian \"warhamhuma kama rabbayani shaghira\": QS. Al-Isra': 24",
+      "kitabSumber": "Rangkaian wirid tradisi (jumhur)"
+    },
+    "tags": ["penutup", "rangkaian-tradisi", "orang-tua"],
+    "konteks": "Bagian rangkaian tradisi; mengandung penggalan QS. Al-Isra': 24 yang masyhur untuk mendoakan orang tua."
+  },
+  {
+    "id": "doa-tradisi-penutup-shaffat",
+    "judul": "Penutup: Subhana rabbika",
+    "kategori": "doa-harian",
+    "arab": "سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ، وَسَلَامٌ عَلَى الْمُرْسَلِينَ، وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+    "latin": "Subhana rabbika rabbil-'izzati 'amma yashifun, wa salamun 'alal-mursalin, wal-hamdulillahi rabbil-'alamin.",
+    "terjemah": "Mahasuci Tuhanmu, Tuhan Yang Mahaperkasa, dari apa yang mereka sifatkan. Dan kesejahteraan atas para rasul. Dan segala puji bagi Allah, Tuhan semesta alam.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "quran",
+      "referensi": "QS. Ash-Shaffat: 180-182"
+    },
+    "tags": ["penutup", "rangkaian-tradisi"],
+    "konteks": "Penutup rangkaian doa tradisi, diambil dari akhir Surah Ash-Shaffat. Biasanya dilanjutkan dengan Al-Fatihah."
+  }
+]

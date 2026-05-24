@@ -1,0 +1,53 @@
+[
+  {
+    "id": "doa-sunnah-tahlil-panjang",
+    "judul": "Tahlil panjang setelah sholat",
+    "kategori": "doa-harian",
+    "arab": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَلَا نَعْبُدُ إِلَّا إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لَا إِلَهَ إِلَّا اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ",
+    "latin": "La ilaha illallahu wahdahu la syarika lah, lahul-mulku wa lahul-hamdu wa huwa 'ala kulli syai'in qadir. La haula wa la quwwata illa billah. La ilaha illallahu wa la na'budu illa iyyah, lahun-ni'matu wa lahul-fadhlu wa lahuts-tsana'ul-hasan. La ilaha illallahu mukhlishina lahud-din wa lau karihal-kafirun.",
+    "terjemah": "Tidak ada tuhan selain Allah semata, tidak ada sekutu bagi-Nya. Milik-Nya kerajaan dan pujian, dan Dia Mahakuasa atas segala sesuatu. Tidak ada daya dan kekuatan kecuali dengan (pertolongan) Allah. Tidak ada tuhan selain Allah, dan kami tidak menyembah kecuali Dia. Milik-Nya segala nikmat, karunia, dan pujian yang baik. Tidak ada tuhan selain Allah, dengan memurnikan ketaatan kepada-Nya walaupun orang-orang kafir membencinya.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 594",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim, Hisnul Muslim Bab 27"
+    },
+    "tags": ["penutup", "doa-sunnah", "tauhid", "tahlil"],
+    "konteks": "Diucapkan Nabi ﷺ setiap selesai salam dari sholat fardhu."
+  },
+  {
+    "id": "doa-sunnah-taawwudz-dubur-salat",
+    "judul": "Memohon perlindungan setelah sholat",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ",
+    "latin": "Allahumma inni a'udzu bika minal-jubn, wa a'udzu bika an uradda ila ardzalil-'umur, wa a'udzu bika min fitnatid-dunya, wa a'udzu bika min 'adzabil-qabr.",
+    "terjemah": "Ya Allah, aku berlindung kepada-Mu dari sifat pengecut, dari dikembalikan kepada usia yang paling hina (pikun), dari fitnah dunia, dan dari azab kubur.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 6390",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari"
+    },
+    "tags": ["penutup", "doa-sunnah", "perlindungan"],
+    "konteks": "Termasuk doa yang dimohonkan perlindungannya selepas sholat (dubur ash-shalah)."
+  },
+  {
+    "id": "doa-sunnah-ilman-nafian",
+    "judul": "Memohon ilmu, rezeki, & amal (setelah Subuh)",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
+    "latin": "Allahumma inni as'aluka 'ilman nafi'an, wa rizqan thayyiban, wa 'amalan mutaqabbalan.",
+    "terjemah": "Ya Allah, aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Ibnu Majah no. 925",
+      "derajat": "shahih",
+      "kitabSumber": "Sunan Ibnu Majah (dishahihkan Al-Albani)"
+    },
+    "tags": ["penutup", "doa-sunnah", "ilmu", "rezeki"],
+    "konteks": "Dibaca Nabi ﷺ setelah salam dari sholat Subuh."
+  }
+]

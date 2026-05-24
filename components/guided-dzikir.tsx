@@ -23,14 +23,22 @@ function isMuawwidzatStep(doaId: string) {
 }
 
 export function GuidedDzikir() {
-  const flow = useMemo(() => getDzikirFlowItems(), []);
   const hydrated = useMunajatStore((state) => state.hydrated);
+  const settings = useMunajatStore((state) => state.settings);
+  const updateSettings = useMunajatStore((state) => state.updateSettings);
   const progress = useMunajatStore((state) => state.progress);
   const incrementCount = useMunajatStore((state) => state.incrementCount);
   const setStepIndex = useMunajatStore((state) => state.setStepIndex);
   const resetProgress = useMunajatStore((state) => state.resetProgress);
   const setCompleted = useMunajatStore((state) => state.setCompleted);
   const [surahRepeat, setSurahRepeat] = useState<1 | 3>(1);
+
+  const closingStyle = settings.closingStyle ?? "matsur";
+  const includeSunnahDoa = settings.includeSunnahDoa ?? false;
+  const flow = useMemo(
+    () => getDzikirFlowItems(closingStyle, includeSunnahDoa),
+    [closingStyle, includeSunnahDoa]
+  );
 
   const stepIndex = Math.min(progress.stepIndex, flow.length - 1);
   const current = flow[stepIndex];
@@ -145,6 +153,40 @@ export function GuidedDzikir() {
             Reset
           </Button>
         </div>
+
+        <div className="mb-4 flex flex-wrap items-center gap-2 rounded-lg border bg-card p-3 text-sm">
+          <span className="text-muted-foreground">Doa penutup:</span>
+          <Button
+            variant={closingStyle === "matsur" ? "secondary" : "ghost"}
+            size="sm"
+            onClick={() => void updateSettings({ closingStyle: "matsur" })}
+          >
+            Ma&apos;tsur (sunnah)
+          </Button>
+          <Button
+            variant={closingStyle === "tradisi" ? "secondary" : "ghost"}
+            size="sm"
+            onClick={() => void updateSettings({ closingStyle: "tradisi" })}
+          >
+            Tradisi (rangkaian)
+          </Button>
+          <span className="mx-1 h-5 w-px bg-border" aria-hidden />
+          <Button
+            variant={includeSunnahDoa ? "secondary" : "ghost"}
+            size="sm"
+            onClick={() => void updateSettings({ includeSunnahDoa: !includeSunnahDoa })}
+            aria-pressed={includeSunnahDoa}
+          >
+            {includeSunnahDoa ? "✓ " : "+ "}Doa sunnah
+          </Button>
+        </div>
+
+        {current.doa.tags?.includes("rangkaian-tradisi") ? (
+          <p className="mb-4 rounded-md border border-accent/50 bg-accent/15 p-3 text-xs leading-5 text-muted-foreground">
+            Bagian dari rangkaian doa penutup tradisi (jumhur/NU) — kompilasi wirid, bukan satu riwayat
+            tunggal. Sumber tiap bagian tercantum di bawah.
+          </p>
+        ) : null}
 
         {isMuawwidzatStep(current.doa.id) ? (
           <div className="mb-4 flex flex-wrap items-center gap-2 rounded-lg border bg-card p-3 text-sm">

@@ -52,12 +52,16 @@ export type DzikirFlowStep = {
   target?: number;
 };
 
+export type ClosingStyle = "matsur" | "tradisi";
+
 export type UserSettings = {
   id: "settings";
   arabicFontSize: number;
   showLatin: boolean;
   showTranslation: boolean;
   theme: "light" | "dark" | "auto";
+  closingStyle: ClosingStyle;
+  includeSunnahDoa: boolean;
   journalEncryption: {
     enabled: boolean;
     salt?: string;
