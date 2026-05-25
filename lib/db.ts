@@ -172,6 +172,28 @@ export async function deleteJournalEntry(id: number) {
   return getJournalEntries();
 }
 
+export async function setJournalGratitude(id: number, gratitudeNote: string) {
+  await db.munajatJournal.update(id, { gratitudeNote });
+  return getJournalEntries();
+}
+
+export async function incrementPrayedCount(id: number) {
+  const entry = await db.munajatJournal.get(id);
+
+  if (!entry) {
+    return getJournalEntries();
+  }
+
+  const now = new Date().toISOString();
+  await db.munajatJournal.update(id, {
+    prayedCount: (entry.prayedCount ?? 0) + 1,
+    lastPrayedAt: now,
+    updatedAt: now
+  });
+
+  return getJournalEntries();
+}
+
 export async function putJournalEntries(entries: MunajatJournalEntry[]) {
   await db.munajatJournal.bulkPut(entries);
   return getJournalEntries();

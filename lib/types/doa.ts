@@ -126,6 +126,9 @@ export type MunajatJournalEntry = {
   tags: string[];
   status: MunajatJournalStatus;
   hopeKey?: HopeKey;
+  prayedCount?: number;
+  lastPrayedAt?: string;
+  gratitudeNote?: string;
   createdAt: string;
   updatedAt: string;
   answeredAt?: string;

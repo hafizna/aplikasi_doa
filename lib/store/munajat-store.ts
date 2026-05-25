@@ -11,11 +11,13 @@ import {
   getSettings,
   getTasbihHistory,
   importLocalData,
+  incrementPrayedCount,
   markJournalAnswered,
   putJournalEntries,
   resetDzikirProgress,
   saveDzikirProgress,
-  saveSettings
+  saveSettings,
+  setJournalGratitude
 } from "@/lib/db";
 import { createSalt, decryptText, deriveJournalKey, encryptText } from "@/lib/crypto";
 import type { DzikirProgress, MunajatExportData, MunajatJournalEntry, TasbihHistoryEntry, UserSettings } from "@/lib/types/doa";
@@ -35,7 +37,8 @@ type MunajatStore = {
   setCompleted: () => Promise<void>;
   resetProgress: () => Promise<void>;
   addMunajat: (entry: Omit<MunajatJournalEntry, "id" | "createdAt" | "updatedAt" | "status">) => Promise<void>;
-  markMunajatAnswered: (id: number) => Promise<void>;
+  markMunajatAnswered: (id: number, gratitudeNote?: string) => Promise<void>;
+  prayMunajatAgain: (id: number) => Promise<void>;
   deleteMunajat: (id: number) => Promise<void>;
   enableJournalEncryption: (password: string) => Promise<void>;
   unlockJournal: (password: string) => Promise<void>;
@@ -82,7 +85,8 @@ function maskEncryptedJournal(entries: MunajatJournalEntry[]) {
       ? {
           ...entry,
           title: "Hajat terkunci",
-          body: "Masukkan password journal untuk membuka isi munajat ini."
+          body: "Masukkan password journal untuk membuka isi munajat ini.",
+          gratitudeNote: undefined
         }
       : entry
   );
@@ -95,7 +99,8 @@ async function encryptJournalEntry(entry: MunajatJournalEntry, key: CryptoKey) {
 
   const payload = JSON.stringify({
     title: entry.title,
-    body: entry.body
+    body: entry.body,
+    gratitudeNote: entry.gratitudeNote ?? ""
   });
   const encrypted = await encryptText(payload, key);
 
@@ -103,6 +108,7 @@ async function encryptJournalEntry(entry: MunajatJournalEntry, key: CryptoKey) {
     ...entry,
     title: encrypted.ciphertext,
     body: "",
+    gratitudeNote: undefined,
     encrypted: true,
     iv: encrypted.iv
   };
@@ -118,12 +124,13 @@ async function decryptJournalEntry(entry: MunajatJournalEntry, key: CryptoKey) {
   }
 
   const decrypted = await decryptText(entry.title, entry.iv, key);
-  const payload = JSON.parse(decrypted) as { title: string; body: string };
+  const payload = JSON.parse(decrypted) as { title: string; body: string; gratitudeNote?: string };
 
   return {
     ...entry,
     title: payload.title,
-    body: payload.body
+    body: payload.body,
+    gratitudeNote: payload.gratitudeNote || undefined
   };
 }
 
@@ -240,8 +247,46 @@ export const useMunajatStore = create<MunajatStore>((set, get) => ({
     const journalState = await loadJournalForState(state.settings, state.cryptoKey);
     set({ journal: journalState.journal, journalLocked: journalState.locked });
   },
-  markMunajatAnswered: async (id) => {
-    await markJournalAnswered(id);
+  markMunajatAnswered: async (id, gratitudeNote) => {
+    const state = get();
+    const note = gratitudeNote?.trim();
+
+    if (note && state.settings.journalEncryption.enabled) {
+      if (!state.cryptoKey) {
+        throw new Error("Journal terkunci. Buka kunci untuk menyimpan catatan syukur.");
+      }
+
+      const entry = state.journal.find((item) => item.id === id);
+
+      if (!entry) {
+        throw new Error("Hajat tidak ditemukan.");
+      }
+
+      const now = new Date().toISOString();
+      const updated: MunajatJournalEntry = {
+        ...entry,
+        status: "answered",
+        answeredAt: now,
+        updatedAt: now,
+        gratitudeNote: note,
+        encrypted: false,
+        iv: undefined
+      };
+
+      await putJournalEntries([await encryptJournalEntry(updated, state.cryptoKey)]);
+    } else {
+      await markJournalAnswered(id);
+
+      if (note) {
+        await setJournalGratitude(id, note);
+      }
+    }
+
+    const journalState = await loadJournalForState(get().settings, get().cryptoKey);
+    set({ journal: journalState.journal, journalLocked: journalState.locked });
+  },
+  prayMunajatAgain: async (id) => {
+    await incrementPrayedCount(id);
     const journalState = await loadJournalForState(get().settings, get().cryptoKey);
     set({ journal: journalState.journal, journalLocked: journalState.locked });
   },
