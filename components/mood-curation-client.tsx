@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowLeft, BookOpen, Check, ChevronRight, Heart, PenLine, RotateCcw } from "lucide-react";
+import { BookOpen, Check, ChevronRight, Heart, PenLine, RotateCcw } from "lucide-react";
 import { FormEvent, useMemo, useState } from "react";
 import { DoaContent } from "@/components/doa-content";
 import { JournalPanel } from "@/components/journal-panel";
+import { PageHeading } from "@/components/page-heading";
 import { SettingsPanel } from "@/components/settings-panel";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -88,21 +88,16 @@ export function MoodCurationClient() {
 
   return (
     <main className="mx-auto min-h-screen max-w-4xl px-5 py-5 sm:px-8">
-      <header className="flex items-center justify-between gap-4">
-        <Button asChild variant="ghost" size="icon" aria-label="Kembali ke beranda">
-          <Link href="/">
-            <ArrowLeft className="h-5 w-5" />
-          </Link>
-        </Button>
-        <div className="flex-1">
-          <p className="text-sm font-medium text-muted-foreground">Sesuai kondisi hati</p>
-          <h1 className="text-2xl font-semibold">Doa Sesuai Hati</h1>
-        </div>
-        <Button variant="outline" size="sm" onClick={reset}>
-          <RotateCcw className="h-4 w-4" />
-          Ulang
-        </Button>
-      </header>
+      <PageHeading
+        eyebrow="Sesuai kondisi hati"
+        title="Doa Sesuai Hati"
+        action={
+          <Button variant="outline" size="sm" onClick={reset}>
+            <RotateCcw className="h-4 w-4" />
+            Ulang
+          </Button>
+        }
+      />
 
       <section className="mt-7">
         {stage === "mood" ? (

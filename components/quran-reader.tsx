@@ -63,9 +63,11 @@ export function QuranReader() {
             <ArrowLeft className="h-5 w-5" />
           </Link>
         </Button>
-        <div>
-          <p className="text-sm font-medium text-muted-foreground">Bacaan Al-Qur&apos;an</p>
-          <h1 className="text-2xl font-semibold">{selected ? `${selected.nama} (${selected.arti})` : "Tilawah pilihan"}</h1>
+        <div className="min-w-0">
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary/80">Bacaan Al-Qur&apos;an</p>
+          <h1 className="text-2xl font-semibold leading-tight sm:text-3xl">
+            {selected ? `${selected.nama} (${selected.arti})` : "Tilawah pilihan"}
+          </h1>
         </div>
       </header>
 

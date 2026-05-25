@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowLeft, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import { DoaContent } from "@/components/doa-content";
+import { PageHeading } from "@/components/page-heading";
 import { SettingsPanel } from "@/components/settings-panel";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -53,17 +53,7 @@ export function LibraryClient() {
 
   return (
     <main className="mx-auto min-h-screen max-w-5xl px-5 py-5 sm:px-8">
-      <header className="flex items-center gap-4">
-        <Button asChild variant="ghost" size="icon" aria-label="Kembali ke beranda">
-          <Link href="/">
-            <ArrowLeft className="h-5 w-5" />
-          </Link>
-        </Button>
-        <div>
-          <p className="text-sm font-medium text-muted-foreground">Perpustakaan doa</p>
-          <h1 className="text-2xl font-semibold">Jelajah Doa</h1>
-        </div>
-      </header>
+      <PageHeading eyebrow="Perpustakaan doa" title="Jelajah Doa" />
 
       <section className="mt-7 space-y-4">
         <div className="relative">
