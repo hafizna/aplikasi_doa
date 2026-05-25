@@ -7,6 +7,7 @@ import {
   ChevronRight,
   Compass,
   Heart,
+  HeartHandshake,
   Library,
   Moon,
   RotateCcw,
@@ -15,6 +16,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { DailyReflectionCard } from "@/components/daily-reflection-card";
 import { SeasonalBanner } from "@/components/seasonal-banner";
 import { dzikirAfterPrayer, seasonalDoa, thematicDoa } from "@/lib/data/doa";
 import { getContextLabel } from "@/lib/quran-context";
@@ -50,6 +52,12 @@ const menuItems = [
     title: "Doa Sesuai Hati",
     description: "Rangkaian doa terkurasi sesuai kondisi hatimu.",
     icon: Heart
+  },
+  {
+    href: "/renungan",
+    title: "Renungan Hati",
+    description: "Kisah harapan dan konteks saat hati sedang berat.",
+    icon: HeartHandshake
   },
   {
     href: "/jadwal",
@@ -136,6 +144,10 @@ export function HomeClient() {
           </Card>
         </Link>
       ) : null}
+
+      <section className="mt-4">
+        <DailyReflectionCard />
+      </section>
 
       <section className="mt-8">
         <div className="flex items-end justify-between gap-4">

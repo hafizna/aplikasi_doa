@@ -13,6 +13,7 @@ Munajat adalah Progressive Web App untuk dzikir setelah sholat, doa tematik, kal
 - Pilihan gaya penutup (`closingStyle`: ma'tsur/tradisi) dan toggle doa sunnah, netral manhaj
 - Ikon PWA PNG (apple-touch + maskable) di-generate via `npm run icons`
 - Doa sesuai hati dengan kurasi deterministik dari database doa
+- Renungan hati dan kisah harapan bersumber
 - Jelajah doa dengan search/filter
 - Kalender Hijriah offline dan halaman hari istimewa
 - Jadwal sholat dan arah Ka'bah berbasis lokasi
