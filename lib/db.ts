@@ -177,6 +177,11 @@ export async function setJournalGratitude(id: number, gratitudeNote: string) {
   return getJournalEntries();
 }
 
+export async function setJournalReminder(id: number, reminderEnabled: boolean) {
+  await db.munajatJournal.update(id, { reminderEnabled });
+  return getJournalEntries();
+}
+
 export async function incrementPrayedCount(id: number) {
   const entry = await db.munajatJournal.get(id);
 

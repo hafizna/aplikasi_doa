@@ -68,3 +68,25 @@ teguran ("kamu belum dzikir!").
 3. **C** — Haptics, geolocation, share native.
 4. **D** — Widget home screen + Live Activity (kode native, terpisah).
 5. **E** — Rilis TestFlight / internal testing Play.
+
+## 7. Status implementasi (sudah di repo)
+
+Sudah ada & aman untuk build web (tidak mengubah `next.config`):
+- Dependensi `@capacitor/core`, `@capacitor/local-notifications`, `@capacitor/haptics`, `@capacitor/cli`.
+- `capacitor.config.ts` (appId `com.munajat.app`, `webDir: "out"`).
+- [lib/notifications.ts](../lib/notifications.ts): `syncReminders(settings, journal)` — menjadwalkan
+  adzan + dzikir pagi/petang + pengingat hajat untuk 3 hari ke depan via LocalNotifications.
+  **Guarded**: dynamic import + `Capacitor.isNativePlatform()`, jadi **no-op di web/PWA**.
+- [components/notification-sync.tsx](../components/notification-sync.tsx): re-schedule saat
+  settings/journal berubah (dipasang di AppShell).
+- Journal: field `reminderEnabled` per hajat + toggle lonceng di
+  [journal-panel.tsx](../components/journal-panel.tsx) (Fase D).
+
+### Langkah manual tersisa (dijalankan di mesin dengan Xcode/Android Studio)
+
+1. Tambah mode export di `next.config.mjs` (hanya untuk build native, mis. `if (process.env.CAP_BUILD)`
+   set `output: "export"` + matikan serwist). **Jangan** aktif untuk build web/Vercel.
+2. `CAP_BUILD=1 next build` → menghasilkan folder `out`.
+3. `npx cap add ios` / `npx cap add android`, lalu `npx cap sync`.
+4. Buka di Xcode/Android Studio, set ikon & izin notifikasi, uji di simulator/device.
+5. Daftar Apple Developer ($99/th) & Play ($25) untuk rilis.

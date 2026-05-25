@@ -17,7 +17,8 @@ import {
   resetDzikirProgress,
   saveDzikirProgress,
   saveSettings,
-  setJournalGratitude
+  setJournalGratitude,
+  setJournalReminder
 } from "@/lib/db";
 import { createSalt, decryptText, deriveJournalKey, encryptText } from "@/lib/crypto";
 import type { DzikirProgress, MunajatExportData, MunajatJournalEntry, TasbihHistoryEntry, UserSettings } from "@/lib/types/doa";
@@ -39,6 +40,7 @@ type MunajatStore = {
   addMunajat: (entry: Omit<MunajatJournalEntry, "id" | "createdAt" | "updatedAt" | "status">) => Promise<void>;
   markMunajatAnswered: (id: number, gratitudeNote?: string) => Promise<void>;
   prayMunajatAgain: (id: number) => Promise<void>;
+  setMunajatReminder: (id: number, enabled: boolean) => Promise<void>;
   deleteMunajat: (id: number) => Promise<void>;
   enableJournalEncryption: (password: string) => Promise<void>;
   unlockJournal: (password: string) => Promise<void>;
@@ -287,6 +289,11 @@ export const useMunajatStore = create<MunajatStore>((set, get) => ({
   },
   prayMunajatAgain: async (id) => {
     await incrementPrayedCount(id);
+    const journalState = await loadJournalForState(get().settings, get().cryptoKey);
+    set({ journal: journalState.journal, journalLocked: journalState.locked });
+  },
+  setMunajatReminder: async (id, enabled) => {
+    await setJournalReminder(id, enabled);
     const journalState = await loadJournalForState(get().settings, get().cryptoKey);
     set({ journal: journalState.journal, journalLocked: journalState.locked });
   },

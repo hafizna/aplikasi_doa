@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, HandHeart, Repeat, Sparkles, Trash2, X } from "lucide-react";
+import { Bell, Check, HandHeart, Repeat, Sparkles, Trash2, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import { DoaContent } from "@/components/doa-content";
 import { Button } from "@/components/ui/button";
@@ -48,6 +48,7 @@ export function JournalPanel() {
   const journalLocked = useMunajatStore((state) => state.journalLocked);
   const markAnswered = useMunajatStore((state) => state.markMunajatAnswered);
   const prayAgain = useMunajatStore((state) => state.prayMunajatAgain);
+  const setReminder = useMunajatStore((state) => state.setMunajatReminder);
   const deleteMunajat = useMunajatStore((state) => state.deleteMunajat);
   const [filter, setFilter] = useState<HopeKey | "semua">("semua");
   const [prayingId, setPrayingId] = useState<number | null>(null);
@@ -152,9 +153,18 @@ export function JournalPanel() {
                       <p className="mt-1 text-xs text-muted-foreground">
                         Mulai {formatDate(entry.createdAt)}
                         {entry.prayedCount ? ` · doa dipanjatkan ${entry.prayedCount}×` : ""}
+                        {entry.reminderEnabled ? " · pengingat aktif" : ""}
                       </p>
                     </div>
                     <div className="flex gap-2">
+                      <Button
+                        variant={entry.reminderEnabled ? "secondary" : "ghost"}
+                        size="icon"
+                        aria-label={entry.reminderEnabled ? "Matikan pengingat" : "Aktifkan pengingat lembut"}
+                        onClick={() => entry.id && void setReminder(entry.id, !entry.reminderEnabled)}
+                      >
+                        <Bell className="h-4 w-4" />
+                      </Button>
                       <Button
                         variant="outline"
                         size="icon"

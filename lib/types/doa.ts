@@ -129,6 +129,7 @@ export type MunajatJournalEntry = {
   prayedCount?: number;
   lastPrayedAt?: string;
   gratitudeNote?: string;
+  reminderEnabled?: boolean;
   createdAt: string;
   updatedAt: string;
   answeredAt?: string;
