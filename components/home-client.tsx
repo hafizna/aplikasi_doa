@@ -6,6 +6,7 @@ import {
   BookOpenCheck,
   CalendarDays,
   ChevronRight,
+  Clock,
   Compass,
   Heart,
   HeartHandshake,
@@ -20,6 +21,8 @@ import { Card } from "@/components/ui/card";
 import { DailyReflectionCard } from "@/components/daily-reflection-card";
 import { SeasonalBanner } from "@/components/seasonal-banner";
 import { dzikirAfterPrayer, seasonalDoa, thematicDoa } from "@/lib/data/doa";
+import { getHijriDisplay } from "@/lib/hijri-calendar";
+import { formatPrayerTime, getNextPrayer } from "@/lib/prayer";
 import { getContextLabel } from "@/lib/quran-context";
 import { useMunajatStore } from "@/lib/store/munajat-store";
 
@@ -100,24 +103,49 @@ const menuItems = [
 
 export function HomeClient() {
   const hydrated = useMunajatStore((state) => state.hydrated);
+  const settings = useMunajatStore((state) => state.settings);
   const progress = useMunajatStore((state) => state.progress);
   const resetProgress = useMunajatStore((state) => state.resetProgress);
   const hasProgress = hydrated && (progress.stepIndex > 0 || Object.keys(progress.counts).length > 0);
   const quranContext = getContextLabel();
+  const hijriLabel = getHijriDisplay();
+  const nextPrayer = settings.prayer.location ? getNextPrayer(settings) : null;
 
   return (
     <main className="mx-auto flex min-h-screen max-w-5xl flex-col px-5 py-6 sm:px-8 sm:py-10">
-      <header className="flex items-center justify-between">
-        <div>
-          <p className="text-sm font-medium text-muted-foreground">{getGreeting()}</p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-normal sm:text-4xl">Munajat</h1>
+      <header className="rounded-2xl border bg-card/60 p-5 shadow-calm sm:p-6">
+        <p className="font-arabic text-3xl leading-none text-primary/60 sm:text-4xl" aria-hidden>
+          مناجاة
+        </p>
+        <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+          <h1 className="text-3xl font-semibold tracking-normal sm:text-4xl">Munajat</h1>
+          <span className="rounded-full border bg-background/70 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
+            Offline-first
+          </span>
         </div>
-        <div className="rounded-full border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-          Offline-first
+        <p className="mt-1 text-sm font-medium text-muted-foreground">{getGreeting()}</p>
+
+        <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 border-t pt-4 text-sm">
+          <span className="flex items-center gap-2 text-muted-foreground">
+            <Moon className="h-4 w-4 text-primary" />
+            {hijriLabel}
+          </span>
+          {nextPrayer ? (
+            <span className="flex items-center gap-2 text-muted-foreground">
+              <Clock className="h-4 w-4 text-primary" />
+              {nextPrayer.label} {formatPrayerTime(nextPrayer.date)}
+              <span className="text-xs text-primary">· berikutnya</span>
+            </span>
+          ) : (
+            <Link href="/jadwal" className="flex items-center gap-2 text-primary hover:underline">
+              <Clock className="h-4 w-4" />
+              Atur lokasi untuk jadwal sholat
+            </Link>
+          )}
         </div>
       </header>
 
-      <section className="mt-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+      <section className="mt-6 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <p className="text-lg leading-8 text-muted-foreground">
             Pemandu dzikir setelah sholat yang pelan, terarah, dan menyimpan progress hanya di perangkat ini.
@@ -172,7 +200,7 @@ export function HomeClient() {
                 <Card className="flex min-h-40 flex-col justify-between p-5 transition group-hover:-translate-y-0.5 group-hover:border-primary/40 group-hover:shadow-calm">
                   <div>
                     <div className="flex items-start justify-between gap-3">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
+                      <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
                         <Icon className="h-5 w-5" />
                       </div>
                       <ChevronRight className="h-5 w-5 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-primary" />
