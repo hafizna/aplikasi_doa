@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { SeasonalBanner } from "@/components/seasonal-banner";
 import { dzikirAfterPrayer, seasonalDoa, thematicDoa } from "@/lib/data/doa";
+import { getContextLabel } from "@/lib/quran-context";
 import { useMunajatStore } from "@/lib/store/munajat-store";
 
 function getGreeting() {
@@ -57,6 +58,12 @@ const menuItems = [
     icon: Compass
   },
   {
+    href: "/quran",
+    title: "Bacaan Al-Qur'an",
+    description: "Surat pilihan sesuai waktu: Al-Kahfi Jumat, Al-Mulk malam.",
+    icon: BookOpen
+  },
+  {
     href: "/jelajah",
     title: "Jelajah Doa",
     description: "Cari doa berdasarkan kategori, kata kunci, atau sumber.",
@@ -81,6 +88,7 @@ export function HomeClient() {
   const progress = useMunajatStore((state) => state.progress);
   const resetProgress = useMunajatStore((state) => state.resetProgress);
   const hasProgress = hydrated && (progress.stepIndex > 0 || Object.keys(progress.counts).length > 0);
+  const quranContext = getContextLabel();
 
   return (
     <main className="mx-auto flex min-h-screen max-w-5xl flex-col px-5 py-6 sm:px-8 sm:py-10">
@@ -116,6 +124,18 @@ export function HomeClient() {
         </div>
         <SeasonalBanner compact />
       </section>
+
+      {quranContext ? (
+        <Link href="/quran" className="group mt-4 block">
+          <Card className="flex items-center justify-between gap-3 border-primary/40 bg-accent/15 p-4 transition group-hover:border-primary/60">
+            <span className="flex items-center gap-3 text-sm font-medium">
+              <BookOpen className="h-5 w-5 text-primary" />
+              {quranContext}
+            </span>
+            <ChevronRight className="h-5 w-5 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-primary" />
+          </Card>
+        </Link>
+      ) : null}
 
       <section className="mt-8">
         <div className="flex items-end justify-between gap-4">
