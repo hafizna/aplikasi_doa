@@ -3,6 +3,7 @@
 import Link from "next/link";
 import {
   BookOpen,
+  BookOpenCheck,
   CalendarDays,
   ChevronRight,
   Compass,
@@ -58,6 +59,12 @@ const menuItems = [
     title: "Renungan Hati",
     description: "Kisah harapan dan konteks saat hati sedang berat.",
     icon: HeartHandshake
+  },
+  {
+    href: "/hafalan",
+    title: "Hafalan Mode",
+    description: "Latih doa dengan bantuan bertahap dan murajaah lembut.",
+    icon: BookOpenCheck
   },
   {
     href: "/jadwal",

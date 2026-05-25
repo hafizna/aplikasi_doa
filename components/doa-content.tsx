@@ -1,12 +1,19 @@
 "use client";
 
+import Link from "next/link";
+import { BookOpenCheck } from "lucide-react";
 import type { Doa } from "@/lib/types/doa";
 import { AudioPlayer } from "@/components/audio-player";
 import { SourceLine } from "@/components/source-line";
+import { Button } from "@/components/ui/button";
+import { memorizationCandidates } from "@/lib/memorization";
 import { useMunajatStore } from "@/lib/store/munajat-store";
+
+const memorizationIds = new Set(memorizationCandidates.map((doa) => doa.id));
 
 export function DoaContent({ doa, compact = false }: { doa: Doa; compact?: boolean }) {
   const settings = useMunajatStore((state) => state.settings);
+  const canMemorize = memorizationIds.has(doa.id);
 
   return (
     <article className="soft-enter space-y-5">
@@ -33,6 +40,14 @@ export function DoaContent({ doa, compact = false }: { doa: Doa; compact?: boole
       ) : null}
 
       <SourceLine doa={doa} />
+      {canMemorize ? (
+        <Button asChild variant="outline" size="sm" className="w-fit">
+          <Link href={`/hafalan/${doa.id}`}>
+            <BookOpenCheck className="h-4 w-4" />
+            Latih hafalan
+          </Link>
+        </Button>
+      ) : null}
       <AudioPlayer doa={doa} />
     </article>
   );

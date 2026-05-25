@@ -137,6 +137,20 @@ export type MunajatJournalEntry = {
   iv?: string;
 };
 
+export type MemorizationStatus = "learning" | "reviewing" | "memorized";
+
+export type MemorizationProgress = {
+  doaId: string;
+  status: MemorizationStatus;
+  helpLevel: number;
+  reviewCount: number;
+  ease: number;
+  dueAt: string;
+  lastReviewedAt?: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
 export type MunajatExportData = {
   version: 1;
   exportedAt: string;
@@ -144,4 +158,5 @@ export type MunajatExportData = {
   progress: DzikirProgress[];
   tasbihHistory: TasbihHistoryEntry[];
   journal: MunajatJournalEntry[];
+  memorization?: MemorizationProgress[];
 };

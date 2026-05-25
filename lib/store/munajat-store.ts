@@ -5,9 +5,11 @@ import {
   addJournalEntry,
   addTasbihHistory,
   deleteJournalEntry,
+  deleteMemorizationProgress,
   exportLocalData,
   getDzikirProgress,
   getJournalEntries,
+  getMemorizationProgress,
   getSettings,
   getTasbihHistory,
   importLocalData,
@@ -18,10 +20,19 @@ import {
   saveDzikirProgress,
   saveSettings,
   setJournalGratitude,
-  setJournalReminder
+  setJournalReminder,
+  upsertMemorizationProgress
 } from "@/lib/db";
 import { createSalt, decryptText, deriveJournalKey, encryptText } from "@/lib/crypto";
-import type { DzikirProgress, MunajatExportData, MunajatJournalEntry, TasbihHistoryEntry, UserSettings } from "@/lib/types/doa";
+import type {
+  DzikirProgress,
+  MemorizationProgress,
+  MemorizationStatus,
+  MunajatExportData,
+  MunajatJournalEntry,
+  TasbihHistoryEntry,
+  UserSettings
+} from "@/lib/types/doa";
 
 type MunajatStore = {
   hydrated: boolean;
@@ -29,6 +40,7 @@ type MunajatStore = {
   progress: DzikirProgress;
   journal: MunajatJournalEntry[];
   tasbihHistory: TasbihHistoryEntry[];
+  memorization: MemorizationProgress[];
   journalLocked: boolean;
   cryptoKey: CryptoKey | null;
   hydrate: () => Promise<void>;
@@ -45,6 +57,9 @@ type MunajatStore = {
   enableJournalEncryption: (password: string) => Promise<void>;
   unlockJournal: (password: string) => Promise<void>;
   lockJournal: () => Promise<void>;
+  startMemorization: (doaId: string) => Promise<void>;
+  reviewMemorization: (doaId: string, result: "again" | "almost" | "good") => Promise<void>;
+  removeMemorization: (doaId: string) => Promise<void>;
   exportJson: () => Promise<string>;
   importJson: (json: string) => Promise<void>;
 };
@@ -165,12 +180,26 @@ export const useMunajatStore = create<MunajatStore>((set, get) => ({
   progress: fallbackProgress,
   journal: [],
   tasbihHistory: [],
+  memorization: [],
   journalLocked: false,
   cryptoKey: null,
   hydrate: async () => {
-    const [settings, progress, tasbihHistory] = await Promise.all([getSettings(), getDzikirProgress(), getTasbihHistory()]);
+    const [settings, progress, tasbihHistory, memorization] = await Promise.all([
+      getSettings(),
+      getDzikirProgress(),
+      getTasbihHistory(),
+      getMemorizationProgress()
+    ]);
     const journalState = await loadJournalForState(settings, get().cryptoKey);
-    set({ settings, progress, tasbihHistory, journal: journalState.journal, journalLocked: journalState.locked, hydrated: true });
+    set({
+      settings,
+      progress,
+      tasbihHistory,
+      memorization,
+      journal: journalState.journal,
+      journalLocked: journalState.locked,
+      hydrated: true
+    });
   },
   updateSettings: async (settingsPatch) => {
     const nextSettings: UserSettings = {
@@ -353,6 +382,74 @@ export const useMunajatStore = create<MunajatStore>((set, get) => ({
       journal: journalState.journal,
       journalLocked: journalState.locked
     });
+  },
+  startMemorization: async (doaId) => {
+    const now = new Date().toISOString();
+    const existing = get().memorization.find((item) => item.doaId === doaId);
+    const nextProgress: MemorizationProgress = existing ?? {
+      doaId,
+      status: "learning",
+      helpLevel: 0,
+      reviewCount: 0,
+      ease: 1,
+      dueAt: now,
+      createdAt: now,
+      updatedAt: now
+    };
+    const memorization = await upsertMemorizationProgress({
+      ...nextProgress,
+      updatedAt: now
+    });
+
+    set({ memorization });
+  },
+  reviewMemorization: async (doaId, result) => {
+    const now = new Date();
+    const current = get().memorization.find((item) => item.doaId === doaId);
+    const reviewCount = (current?.reviewCount ?? 0) + 1;
+    const nextDue = new Date(now);
+    let helpLevel = current?.helpLevel ?? 0;
+    let status: MemorizationStatus = current?.status ?? "learning";
+    let ease = current?.ease ?? 1;
+
+    if (result === "again") {
+      helpLevel = Math.max(0, helpLevel - 1);
+      status = "learning";
+      ease = Math.max(1, ease - 0.2);
+      nextDue.setDate(now.getDate() + 1);
+    }
+
+    if (result === "almost") {
+      helpLevel = Math.max(0, helpLevel);
+      status = "reviewing";
+      ease = Math.max(1, ease);
+      nextDue.setDate(now.getDate() + Math.max(2, Math.round(2 * ease)));
+    }
+
+    if (result === "good") {
+      helpLevel = Math.min(3, helpLevel + 1);
+      status = reviewCount >= 3 ? "memorized" : "reviewing";
+      ease = ease + 0.25;
+      nextDue.setDate(now.getDate() + Math.max(3, Math.round(4 * ease)));
+    }
+
+    const memorization = await upsertMemorizationProgress({
+      doaId,
+      status,
+      helpLevel,
+      reviewCount,
+      ease,
+      dueAt: nextDue.toISOString(),
+      lastReviewedAt: now.toISOString(),
+      createdAt: current?.createdAt ?? now.toISOString(),
+      updatedAt: now.toISOString()
+    });
+
+    set({ memorization });
+  },
+  removeMemorization: async (doaId) => {
+    const memorization = await deleteMemorizationProgress(doaId);
+    set({ memorization });
   },
   exportJson: async () => {
     const data = await exportLocalData();

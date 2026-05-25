@@ -3,6 +3,7 @@
 import Dexie, { type Table } from "dexie";
 import type {
   DzikirProgress,
+  MemorizationProgress,
   MunajatJournalEntry,
   MunajatExportData,
   TasbihHistoryEntry,
@@ -46,6 +47,7 @@ class MunajatDatabase extends Dexie {
   progress!: Table<DzikirProgress, string>;
   tasbihHistory!: Table<TasbihHistoryEntry, number>;
   munajatJournal!: Table<MunajatJournalEntry, number>;
+  memorization!: Table<MemorizationProgress, string>;
 
   constructor() {
     super("munajat");
@@ -71,6 +73,13 @@ class MunajatDatabase extends Dexie {
       progress: "id",
       tasbihHistory: "++id, doaId, createdAt",
       munajatJournal: "++id, status, hopeKey, createdAt, updatedAt, encrypted"
+    });
+    this.version(5).stores({
+      settings: "id",
+      progress: "id",
+      tasbihHistory: "++id, doaId, createdAt",
+      munajatJournal: "++id, status, hopeKey, createdAt, updatedAt, encrypted",
+      memorization: "doaId, status, dueAt, updatedAt"
     });
   }
 }
@@ -208,12 +217,27 @@ export async function getTasbihHistory() {
   return db.tasbihHistory.orderBy("createdAt").reverse().toArray();
 }
 
+export async function getMemorizationProgress() {
+  return db.memorization.orderBy("updatedAt").reverse().toArray();
+}
+
+export async function upsertMemorizationProgress(progress: MemorizationProgress) {
+  await db.memorization.put(progress);
+  return getMemorizationProgress();
+}
+
+export async function deleteMemorizationProgress(doaId: string) {
+  await db.memorization.delete(doaId);
+  return getMemorizationProgress();
+}
+
 export async function exportLocalData(): Promise<MunajatExportData> {
-  const [settings, progress, tasbihHistory, journal] = await Promise.all([
+  const [settings, progress, tasbihHistory, journal, memorization] = await Promise.all([
     getSettings(),
     db.progress.toArray(),
     db.tasbihHistory.toArray(),
-    db.munajatJournal.toArray()
+    db.munajatJournal.toArray(),
+    db.memorization.toArray()
   ]);
 
   return {
@@ -222,12 +246,13 @@ export async function exportLocalData(): Promise<MunajatExportData> {
     settings,
     progress,
     tasbihHistory,
-    journal
+    journal,
+    memorization
   };
 }
 
 export async function importLocalData(data: MunajatExportData) {
-  await db.transaction("rw", db.settings, db.progress, db.tasbihHistory, db.munajatJournal, async () => {
+  await db.transaction("rw", [db.settings, db.progress, db.tasbihHistory, db.munajatJournal, db.memorization], async () => {
     await db.settings.put(data.settings);
     await db.progress.clear();
     await db.progress.bulkPut(data.progress);
@@ -235,5 +260,7 @@ export async function importLocalData(data: MunajatExportData) {
     await db.tasbihHistory.bulkPut(data.tasbihHistory);
     await db.munajatJournal.clear();
     await db.munajatJournal.bulkPut(data.journal);
+    await db.memorization.clear();
+    await db.memorization.bulkPut(data.memorization ?? []);
   });
 }
