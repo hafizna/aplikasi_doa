@@ -95,7 +95,7 @@ export function MoodCurationClient() {
           </Link>
         </Button>
         <div className="flex-1">
-          <p className="text-sm font-medium text-muted-foreground">Flow 2</p>
+          <p className="text-sm font-medium text-muted-foreground">Sesuai kondisi hati</p>
           <h1 className="text-2xl font-semibold">Doa Sesuai Hati</h1>
         </div>
         <Button variant="outline" size="sm" onClick={reset}>
@@ -176,7 +176,7 @@ export function MoodCurationClient() {
               <BookOpen className="h-5 w-5 text-primary" />
               <h2 className="mt-4 text-2xl font-semibold">Paket doa terkurasi</h2>
               <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                Dipilih dari database doa yang sudah ada berdasarkan tag: {tags.length ? tags.join(", ") : "umum"}.
+                Dirangkai dari koleksi doa sesuai kondisi yang kamu pilih.
               </p>
             </Card>
 
@@ -200,7 +200,7 @@ export function MoodCurationClient() {
                   placeholder="Tulis hajat atau doa pribadi. Tidak dikirim ke mana pun."
                 />
                 <div className="mt-3 flex items-center justify-between gap-3">
-                  <p className="text-xs text-muted-foreground">Tersimpan lokal di IndexedDB.</p>
+                  <p className="text-xs text-muted-foreground">Tersimpan di perangkatmu saja.</p>
                   <Button type="submit" disabled={!journalText.trim()}>
                     {saved ? <Check className="h-4 w-4" /> : <PenLine className="h-4 w-4" />}
                     Simpan

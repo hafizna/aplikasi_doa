@@ -60,7 +60,7 @@ export function LibraryClient() {
           </Link>
         </Button>
         <div>
-          <p className="text-sm font-medium text-muted-foreground">Flow 4</p>
+          <p className="text-sm font-medium text-muted-foreground">Perpustakaan doa</p>
           <h1 className="text-2xl font-semibold">Jelajah Doa</h1>
         </div>
       </header>

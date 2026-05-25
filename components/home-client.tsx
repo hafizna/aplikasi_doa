@@ -41,13 +41,13 @@ const menuItems = [
   {
     href: "/dzikir-setelah-sholat",
     title: "Dzikir Setelah Sholat",
-    description: "Flow terpandu dengan counter dan progress tersimpan.",
+    description: "Dituntun langkah demi langkah, hitungan tersimpan otomatis.",
     icon: Moon
   },
   {
     href: "/doa-sesuai-hati",
     title: "Doa Sesuai Hati",
-    description: "Paket doa terkurasi dari database berdasarkan kondisi hati.",
+    description: "Rangkaian doa terkurasi sesuai kondisi hatimu.",
     icon: Heart
   },
   {
@@ -59,7 +59,7 @@ const menuItems = [
   {
     href: "/jelajah",
     title: "Jelajah Doa",
-    description: "Cari doa berdasarkan kategori, tag, teks, atau sumber.",
+    description: "Cari doa berdasarkan kategori, kata kunci, atau sumber.",
     icon: Library
   },
   {
@@ -158,9 +158,9 @@ export function HomeClient() {
         </Card>
         <Card className="p-5">
           <BookOpen className="h-5 w-5 text-primary" />
-          <h2 className="mt-4 font-semibold">Seed tematik</h2>
+          <h2 className="mt-4 font-semibold">Doa tematik</h2>
           <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {thematicDoa.length} doa tematik sudah tersedia sebagai fondasi Fase 2.
+            {thematicDoa.length} doa pilihan untuk berbagai kebutuhan hati: tobat, rezeki, perlindungan, dan lainnya.
           </p>
         </Card>
         <Card className="p-5 sm:col-span-2">
@@ -173,7 +173,7 @@ export function HomeClient() {
       </section>
 
       <footer className="mt-auto pt-10 text-xs leading-5 text-muted-foreground">
-        Data hajat, settings, dan progress disimpan lokal via IndexedDB. Tidak ada akun, analytics, atau cloud sync.
+        Hajat, preferensi, dan progresmu tersimpan di perangkat ini saja. Tanpa akun, tanpa pelacakan, tanpa server.
       </footer>
     </main>
   );

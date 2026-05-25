@@ -81,7 +81,7 @@ export function GuidedDzikir() {
           </div>
           <h1 className="mt-6 text-3xl font-semibold">Alhamdulillah, selesai.</h1>
           <p className="mt-3 text-sm leading-6 text-muted-foreground">
-            Semoga Allah menerima dzikir dan doa kita. Pada Fase 2, bagian ini akan tersambung ke Munajat Personal.
+            Semoga Allah menerima dzikir dan doa kita. Ada hajat yang ingin kamu panjatkan? Lanjutkan ke Doa Sesuai Hati.
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <Button onClick={() => void resetProgress()}>
