@@ -321,7 +321,7 @@ export function PrayerPanel() {
             <Crosshair className="absolute h-4 w-4 text-muted-foreground" />
           </div>
           <div>
-            <p className="font-semibold">Arah Ka&apos;bah {Math.round(qiblaBearing)}° dari utara</p>
+            <p className="font-semibold">Arah Ka&apos;bah {Math.round(qiblaBearing)} derajat dari utara</p>
             <p className="mt-2 text-sm leading-6 text-muted-foreground">
               Panah akan menyesuaikan bila kompas perangkat aktif. Letakkan perangkat mendatar untuk hasil yang lebih stabil.
             </p>

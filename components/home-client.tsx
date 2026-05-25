@@ -1,12 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, ChevronRight, Heart, Library, RotateCcw, ShieldCheck } from "lucide-react";
+import {
+  BookOpen,
+  CalendarDays,
+  ChevronRight,
+  Compass,
+  Heart,
+  Library,
+  Moon,
+  RotateCcw,
+  Settings,
+  ShieldCheck
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { AdvancedPanel } from "@/components/advanced-panel";
-import { PrayerPanel } from "@/components/prayer-panel";
-import { SettingsPanel } from "@/components/settings-panel";
 import { SeasonalBanner } from "@/components/seasonal-banner";
 import { dzikirAfterPrayer, seasonalDoa, thematicDoa } from "@/lib/data/doa";
 import { useMunajatStore } from "@/lib/store/munajat-store";
@@ -29,6 +37,45 @@ function getGreeting() {
   return "Malam yang hening";
 }
 
+const menuItems = [
+  {
+    href: "/dzikir-setelah-sholat",
+    title: "Dzikir Setelah Sholat",
+    description: "Flow terpandu dengan counter dan progress tersimpan.",
+    icon: Moon
+  },
+  {
+    href: "/doa-sesuai-hati",
+    title: "Doa Sesuai Hati",
+    description: "Paket doa terkurasi dari database berdasarkan kondisi hati.",
+    icon: Heart
+  },
+  {
+    href: "/jadwal",
+    title: "Jadwal & Kiblat",
+    description: "Waktu sholat, arah Ka'bah, lokasi, dan notifikasi adzan.",
+    icon: Compass
+  },
+  {
+    href: "/jelajah",
+    title: "Jelajah Doa",
+    description: "Cari doa berdasarkan kategori, tag, teks, atau sumber.",
+    icon: Library
+  },
+  {
+    href: "/hari-ini",
+    title: "Hari Istimewa",
+    description: "Arafah, Asyura, Ramadan, Jumat, dan momen Hijriah lain.",
+    icon: CalendarDays
+  },
+  {
+    href: "/pengaturan",
+    title: "Pengaturan",
+    description: "Tema, font Arab, privasi journal, export/import, notifikasi.",
+    icon: Settings
+  }
+] as const;
+
 export function HomeClient() {
   const hydrated = useMunajatStore((state) => state.hydrated);
   const progress = useMunajatStore((state) => state.progress);
@@ -36,7 +83,7 @@ export function HomeClient() {
   const hasProgress = hydrated && (progress.stepIndex > 0 || Object.keys(progress.counts).length > 0);
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-3xl flex-col px-5 py-6 sm:px-8 sm:py-10">
+    <main className="mx-auto flex min-h-screen max-w-5xl flex-col px-5 py-6 sm:px-8 sm:py-10">
       <header className="flex items-center justify-between">
         <div>
           <p className="text-sm font-medium text-muted-foreground">{getGreeting()}</p>
@@ -47,12 +94,12 @@ export function HomeClient() {
         </div>
       </header>
 
-      <section className="mt-10">
-        <div className="max-w-2xl">
+      <section className="mt-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+        <div>
           <p className="text-lg leading-8 text-muted-foreground">
             Pemandu dzikir setelah sholat yang pelan, terarah, dan menyimpan progress hanya di perangkat ini.
           </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
             <Button asChild size="lg" className="min-h-12 justify-between">
               <Link href="/dzikir-setelah-sholat">
                 {hasProgress ? "Lanjutkan Dzikir Setelah Sholat" : "Mulai Dzikir Setelah Sholat"}
@@ -66,33 +113,39 @@ export function HomeClient() {
               </Button>
             ) : null}
           </div>
-          <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            <Button asChild variant="secondary" size="lg" className="justify-between">
-              <Link href="/doa-sesuai-hati">
-                <span className="flex items-center gap-2">
-                  <Heart className="h-5 w-5" />
-                  Doa Sesuai Hati
-                </span>
-                <ChevronRight className="h-5 w-5" />
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="justify-between">
-              <Link href="/jelajah">
-                <span className="flex items-center gap-2">
-                  <Library className="h-5 w-5" />
-                  Jelajah Doa
-                </span>
-                <ChevronRight className="h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
         </div>
+        <SeasonalBanner compact />
       </section>
 
-      <SeasonalBanner />
+      <section className="mt-8">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-xl font-semibold">Menu</h2>
+            <p className="mt-1 text-sm text-muted-foreground">Pilih fitur tanpa scroll panjang.</p>
+          </div>
+        </div>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {menuItems.map((item) => {
+            const Icon = item.icon;
 
-      <section className="mt-5">
-        <PrayerPanel />
+            return (
+              <Link key={item.href} href={item.href} className="group">
+                <Card className="flex min-h-40 flex-col justify-between p-5 transition group-hover:-translate-y-0.5 group-hover:border-primary/40 group-hover:shadow-calm">
+                  <div>
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-secondary text-secondary-foreground">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <ChevronRight className="h-5 w-5 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-primary" />
+                    </div>
+                    <h3 className="mt-5 font-semibold">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.description}</p>
+                  </div>
+                </Card>
+              </Link>
+            );
+          })}
+        </div>
       </section>
 
       <section className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -117,14 +170,6 @@ export function HomeClient() {
             {seasonalDoa.length} doa musiman tersedia untuk Ramadan, Arafah, Asyura, Jumat, dan puasa sunnah.
           </p>
         </Card>
-      </section>
-
-      <section className="mt-5">
-        <SettingsPanel />
-      </section>
-
-      <section className="mt-5">
-        <AdvancedPanel />
       </section>
 
       <footer className="mt-auto pt-10 text-xs leading-5 text-muted-foreground">
