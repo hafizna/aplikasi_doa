@@ -52,6 +52,10 @@ const fallbackSettings: UserSettings = {
   theme: "auto",
   closingStyle: "matsur",
   includeSunnahDoa: false,
+  prayer: {
+    calculationMethod: "singapore",
+    madhab: "shafi"
+  },
   journalEncryption: {
     enabled: false
   },
@@ -59,7 +63,9 @@ const fallbackSettings: UserSettings = {
     enabled: false,
     dzikirMorning: false,
     dzikirEvening: false,
-    specialDays: false
+    specialDays: false,
+    adhan: false,
+    adhanBeforeMinutes: 0
   }
 };
 
@@ -164,6 +170,10 @@ export const useMunajatStore = create<MunajatStore>((set, get) => ({
       journalEncryption: {
         ...get().settings.journalEncryption,
         ...settingsPatch.journalEncryption
+      },
+      prayer: {
+        ...get().settings.prayer,
+        ...settingsPatch.prayer
       },
       notifications: {
         ...get().settings.notifications,

@@ -53,6 +53,23 @@ export type DzikirFlowStep = {
 };
 
 export type ClosingStyle = "matsur" | "tradisi";
+export type PrayerCalculationMethod =
+  | "singapore"
+  | "muslimWorldLeague"
+  | "ummAlQura"
+  | "egyptian"
+  | "karachi"
+  | "dubai"
+  | "qatar";
+export type PrayerMadhab = "shafi" | "hanafi";
+
+export type PrayerLocation = {
+  latitude: number;
+  longitude: number;
+  label: string;
+  source: "gps" | "manual";
+  updatedAt: string;
+};
 
 export type UserSettings = {
   id: "settings";
@@ -62,6 +79,11 @@ export type UserSettings = {
   theme: "light" | "dark" | "auto";
   closingStyle: ClosingStyle;
   includeSunnahDoa: boolean;
+  prayer: {
+    location?: PrayerLocation;
+    calculationMethod: PrayerCalculationMethod;
+    madhab: PrayerMadhab;
+  };
   journalEncryption: {
     enabled: boolean;
     salt?: string;
@@ -71,6 +93,8 @@ export type UserSettings = {
     dzikirMorning: boolean;
     dzikirEvening: boolean;
     specialDays: boolean;
+    adhan: boolean;
+    adhanBeforeMinutes: number;
   };
 };
 

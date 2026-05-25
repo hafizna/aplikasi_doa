@@ -5,6 +5,7 @@ import { BookOpen, ChevronRight, Heart, Library, RotateCcw, ShieldCheck } from "
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { AdvancedPanel } from "@/components/advanced-panel";
+import { PrayerPanel } from "@/components/prayer-panel";
 import { SettingsPanel } from "@/components/settings-panel";
 import { SeasonalBanner } from "@/components/seasonal-banner";
 import { dzikirAfterPrayer, seasonalDoa, thematicDoa } from "@/lib/data/doa";
@@ -89,6 +90,10 @@ export function HomeClient() {
       </section>
 
       <SeasonalBanner />
+
+      <section className="mt-5">
+        <PrayerPanel />
+      </section>
 
       <section className="mt-10 grid gap-4 sm:grid-cols-2">
         <Card className="p-5">

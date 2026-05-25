@@ -17,6 +17,10 @@ const defaultSettings: UserSettings = {
   theme: "auto",
   closingStyle: "matsur",
   includeSunnahDoa: false,
+  prayer: {
+    calculationMethod: "singapore",
+    madhab: "shafi"
+  },
   journalEncryption: {
     enabled: false
   },
@@ -24,7 +28,9 @@ const defaultSettings: UserSettings = {
     enabled: false,
     dzikirMorning: false,
     dzikirEvening: false,
-    specialDays: false
+    specialDays: false,
+    adhan: false,
+    adhanBeforeMinutes: 0
   }
 };
 
@@ -74,6 +80,10 @@ export async function getSettings() {
     journalEncryption: {
       ...defaultSettings.journalEncryption,
       ...settings?.journalEncryption
+    },
+    prayer: {
+      ...defaultSettings.prayer,
+      ...settings?.prayer
     },
     notifications: {
       ...defaultSettings.notifications,

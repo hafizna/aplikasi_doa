@@ -15,6 +15,7 @@ Munajat adalah Progressive Web App untuk dzikir setelah sholat, doa tematik, kal
 - Doa sesuai hati dengan kurasi deterministik dari database doa
 - Jelajah doa dengan search/filter
 - Kalender Hijriah offline dan halaman hari istimewa
+- Jadwal sholat dan arah Ka'bah berbasis lokasi
 - Audio player Qur'an via Quran.com API + Cache API untuk simpan offline
 - Enkripsi journal opsional dengan Web Crypto
 - Export/import JSON lokal
