@@ -66,6 +66,12 @@ class MunajatDatabase extends Dexie {
       tasbihHistory: "++id, doaId, createdAt",
       munajatJournal: "++id, status, createdAt, updatedAt, encrypted"
     });
+    this.version(4).stores({
+      settings: "id",
+      progress: "id",
+      tasbihHistory: "++id, doaId, createdAt",
+      munajatJournal: "++id, status, hopeKey, createdAt, updatedAt, encrypted"
+    });
   }
 }
 

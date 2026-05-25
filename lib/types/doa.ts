@@ -116,6 +116,8 @@ export type TasbihHistoryEntry = {
 
 export type MunajatJournalStatus = "active" | "answered";
 
+export type HopeKey = "jodoh" | "keturunan" | "rezeki" | "kesembuhan" | "ilmu" | "pekerjaan" | "lainnya";
+
 export type MunajatJournalEntry = {
   id?: number;
   title: string;
@@ -123,6 +125,7 @@ export type MunajatJournalEntry = {
   mood: string;
   tags: string[];
   status: MunajatJournalStatus;
+  hopeKey?: HopeKey;
   createdAt: string;
   updatedAt: string;
   answeredAt?: string;

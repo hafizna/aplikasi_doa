@@ -78,7 +78,8 @@ export function MoodCurationClient() {
       title: getMoodLabel(answers.mood),
       body,
       mood: answers.mood ?? "lainnya",
-      tags
+      tags,
+      ...(answers.hope ? { hopeKey: answers.hope } : {})
     }).then(() => {
       setSaved(true);
       setJournalText("");

@@ -1,8 +1,8 @@
 import { allDoa, getDoaById, thematicDoa } from "@/lib/data/doa";
-import type { Doa } from "@/lib/types/doa";
+import type { Doa, HopeKey } from "@/lib/types/doa";
 
+export type { HopeKey };
 export type MoodKey = "tobat" | "berat" | "syukur" | "cemas" | "berharap" | "lainnya";
-export type HopeKey = "jodoh" | "keturunan" | "rezeki" | "kesembuhan" | "ilmu" | "pekerjaan" | "lainnya";
 export type DurationKey = "singkat" | "cukup" | "bebas";
 
 export type CurationAnswers = {
