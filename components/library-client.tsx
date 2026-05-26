@@ -8,6 +8,7 @@ import { SettingsPanel } from "@/components/settings-panel";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { allDoa } from "@/lib/data/doa";
+import { inferTagsFromText } from "@/lib/keyword-map";
 import type { KategoriDoa } from "@/lib/types/doa";
 
 const categoryLabels: Record<KategoriDoa | "semua", string> = {
@@ -31,6 +32,7 @@ export function LibraryClient() {
 
   const filteredDoa = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
+    const inferredTags = normalizedQuery ? inferTagsFromText(query) : [];
 
     return allDoa.filter((doa) => {
       const matchesCategory = category === "semua" || doa.kategori === category;
@@ -45,7 +47,10 @@ export function LibraryClient() {
       ]
         .join(" ")
         .toLowerCase();
-      const matchesQuery = !normalizedQuery || haystack.includes(normalizedQuery);
+      const matchesQuery =
+        !normalizedQuery ||
+        haystack.includes(normalizedQuery) ||
+        inferredTags.some((inferred) => doa.tags.includes(inferred));
 
       return matchesCategory && matchesTag && matchesQuery;
     });

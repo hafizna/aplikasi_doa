@@ -1,0 +1,279 @@
+[
+  {
+    "id": "harian-bangun-tidur",
+    "judul": "Doa bangun tidur",
+    "kategori": "doa-harian",
+    "arab": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+    "latin": "Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin-nusyur.",
+    "terjemah": "Segala puji bagi Allah yang menghidupkan kami setelah mematikan kami, dan kepada-Nya kami dibangkitkan.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 6312",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari, Hisnul Muslim"
+    },
+    "tags": ["harian", "tidur", "pagi", "syukur"],
+    "konteks": "Dibaca ketika bangun dari tidur."
+  },
+  {
+    "id": "harian-mau-tidur",
+    "judul": "Doa sebelum tidur",
+    "kategori": "doa-harian",
+    "arab": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+    "latin": "Bismikallahumma amutu wa ahya.",
+    "terjemah": "Dengan nama-Mu, ya Allah, aku mati dan aku hidup.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 6324",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari, Hisnul Muslim"
+    },
+    "tags": ["harian", "tidur", "malam"],
+    "konteks": "Dibaca ketika hendak tidur."
+  },
+  {
+    "id": "harian-sebelum-makan",
+    "judul": "Doa sebelum makan",
+    "kategori": "doa-harian",
+    "arab": "بِسْمِ اللَّهِ",
+    "latin": "Bismillah.",
+    "terjemah": "Dengan nama Allah.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 3767, Tirmidzi no. 1858",
+      "derajat": "shahih",
+      "kitabSumber": "Hisnul Muslim"
+    },
+    "tags": ["harian", "makan", "syukur"],
+    "konteks": "Dibaca sebelum makan. Jika lupa di awal, ucapkan: Bismillahi awwalahu wa akhirah."
+  },
+  {
+    "id": "harian-sesudah-makan",
+    "judul": "Doa sesudah makan",
+    "kategori": "doa-harian",
+    "arab": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ",
+    "latin": "Alhamdulillahilladzi ath'amani hadza wa razaqanihi min ghairi haulin minni wa la quwwah.",
+    "terjemah": "Segala puji bagi Allah yang memberiku makanan ini dan memberiku rezeki tanpa daya dan kekuatan dariku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Tirmidzi no. 3458",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Tirmidzi, Hisnul Muslim"
+    },
+    "tags": ["harian", "makan", "rezeki", "syukur"],
+    "keutamaan": "Siapa membacanya, diampuni dosa-dosanya yang telah lalu.",
+    "konteks": "Dibaca setelah selesai makan."
+  },
+  {
+    "id": "harian-masuk-wc",
+    "judul": "Doa masuk kamar mandi",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+    "latin": "Allahumma inni a'udzu bika minal-khubutsi wal-khaba'its.",
+    "terjemah": "Ya Allah, aku berlindung kepada-Mu dari setan laki-laki dan setan perempuan.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 142, Muslim no. 375",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari, Shahih Muslim"
+    },
+    "tags": ["harian", "wc", "perlindungan"],
+    "konteks": "Didahului dengan membaca Bismillah, lalu doa ini sebelum masuk."
+  },
+  {
+    "id": "harian-keluar-wc",
+    "judul": "Doa keluar kamar mandi",
+    "kategori": "doa-harian",
+    "arab": "غُفْرَانَكَ",
+    "latin": "Ghufranak.",
+    "terjemah": "Aku memohon ampunan-Mu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 30, Tirmidzi no. 7",
+      "derajat": "shahih",
+      "kitabSumber": "Hisnul Muslim"
+    },
+    "tags": ["harian", "wc", "ampunan"],
+    "konteks": "Dibaca ketika keluar dari kamar mandi."
+  },
+  {
+    "id": "harian-keluar-rumah",
+    "judul": "Doa keluar rumah",
+    "kategori": "doa-harian",
+    "arab": "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+    "latin": "Bismillah, tawakkaltu 'alallah, wa la haula wa la quwwata illa billah.",
+    "terjemah": "Dengan nama Allah, aku bertawakal kepada Allah, dan tidak ada daya dan kekuatan kecuali dengan (pertolongan) Allah.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 5095, Tirmidzi no. 3426",
+      "derajat": "shahih",
+      "kitabSumber": "Hisnul Muslim"
+    },
+    "tags": ["harian", "rumah", "tawakal", "perlindungan"],
+    "keutamaan": "Dikatakan kepadanya: kamu dicukupi dan dijaga, lalu setan menjauh darinya.",
+    "konteks": "Dibaca ketika keluar dari rumah."
+  },
+  {
+    "id": "harian-naik-kendaraan",
+    "judul": "Doa naik kendaraan",
+    "kategori": "doa-harian",
+    "arab": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+    "latin": "Subhanalladzi sakhkhara lana hadza wa ma kunna lahu muqrinin, wa inna ila rabbina lamunqalibun.",
+    "terjemah": "Mahasuci Allah yang telah menundukkan kendaraan ini untuk kami, padahal kami tidak mampu menguasainya. Dan sesungguhnya kepada Tuhan kami, kami pasti kembali.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 1342; QS. Az-Zukhruf: 13-14",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim, Hisnul Muslim"
+    },
+    "tags": ["harian", "kendaraan", "safar", "perlindungan"],
+    "konteks": "Dibaca ketika sudah naik dan duduk di atas kendaraan."
+  },
+  {
+    "id": "harian-masuk-masjid",
+    "judul": "Doa masuk masjid",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+    "latin": "Allahummaftah li abwaba rahmatik.",
+    "terjemah": "Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 713",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim, Hisnul Muslim"
+    },
+    "tags": ["harian", "masjid", "sholat"],
+    "konteks": "Dibaca ketika masuk masjid, didahului mendahulukan kaki kanan."
+  },
+  {
+    "id": "harian-keluar-masjid",
+    "judul": "Doa keluar masjid",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+    "latin": "Allahumma inni as'aluka min fadhlik.",
+    "terjemah": "Ya Allah, sesungguhnya aku memohon kepada-Mu sebagian dari karunia-Mu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 713",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim, Hisnul Muslim"
+    },
+    "tags": ["harian", "masjid", "rezeki"],
+    "konteks": "Dibaca ketika keluar masjid, didahului mendahulukan kaki kiri."
+  },
+  {
+    "id": "harian-setelah-wudhu",
+    "judul": "Doa setelah wudhu",
+    "kategori": "doa-harian",
+    "arab": "أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+    "latin": "Asyhadu an la ilaha illallahu wahdahu la syarika lah, wa asyhadu anna Muhammadan 'abduhu wa rasuluh.",
+    "terjemah": "Aku bersaksi bahwa tidak ada tuhan selain Allah semata, tidak ada sekutu bagi-Nya, dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Muslim no. 234",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Muslim, Hisnul Muslim"
+    },
+    "tags": ["harian", "wudhu", "tauhid"],
+    "keutamaan": "Dibukakan baginya delapan pintu surga, ia boleh masuk dari mana saja.",
+    "konteks": "Dibaca setelah selesai berwudhu."
+  },
+  {
+    "id": "harian-turun-hujan",
+    "judul": "Doa ketika turun hujan",
+    "kategori": "doa-harian",
+    "arab": "اللَّهُمَّ صَيِّبًا نَافِعًا",
+    "latin": "Allahumma shayyiban nafi'a.",
+    "terjemah": "Ya Allah, jadikanlah hujan ini hujan yang bermanfaat.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 1032",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari, Hisnul Muslim"
+    },
+    "tags": ["harian", "hujan", "rezeki", "syukur"],
+    "konteks": "Dibaca ketika hujan turun."
+  },
+  {
+    "id": "harian-berbuka-puasa",
+    "judul": "Doa berbuka puasa",
+    "kategori": "doa-harian",
+    "arab": "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ",
+    "latin": "Dzahabazh-zhama'u wabtallatil-'uruqu wa tsabatal-ajru insya Allah.",
+    "terjemah": "Telah hilang rasa haus, urat-urat telah basah, dan pahala telah ditetapkan insya Allah.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 2357",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Abu Dawud, Hisnul Muslim"
+    },
+    "tags": ["harian", "puasa", "ramadan", "syukur"],
+    "konteks": "Dibaca setelah berbuka puasa."
+  },
+  {
+    "id": "harian-masuk-pasar",
+    "judul": "Doa masuk pasar",
+    "kategori": "doa-harian",
+    "arab": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، يُحْيِي وَيُمِيتُ، وَهُوَ حَيٌّ لَا يَمُوتُ، بِيَدِهِ الْخَيْرُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+    "latin": "La ilaha illallahu wahdahu la syarika lah, lahul-mulku wa lahul-hamdu, yuhyi wa yumit, wa huwa hayyun la yamut, biyadihil-khair, wa huwa 'ala kulli syai'in qadir.",
+    "terjemah": "Tidak ada tuhan selain Allah semata, tidak ada sekutu bagi-Nya. Milik-Nya kerajaan dan pujian. Dia menghidupkan dan mematikan, sedang Dia Mahahidup dan tidak mati. Di tangan-Nya segala kebaikan, dan Dia Mahakuasa atas segala sesuatu.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Tirmidzi no. 3428",
+      "derajat": "hasan",
+      "kitabSumber": "Sunan Tirmidzi, Hisnul Muslim"
+    },
+    "tags": ["harian", "pasar", "rezeki", "perlindungan"],
+    "keutamaan": "Allah menuliskan baginya sejuta kebaikan dan menghapus sejuta keburukan.",
+    "konteks": "Dibaca ketika memasuki pasar atau tempat keramaian jual-beli."
+  },
+  {
+    "id": "harian-ketika-marah",
+    "judul": "Doa ketika marah",
+    "kategori": "doa-harian",
+    "arab": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+    "latin": "A'udzu billahi minasy-syaithanir-rajim.",
+    "terjemah": "Aku berlindung kepada Allah dari setan yang terkutuk.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Bukhari no. 3282, Muslim no. 2610",
+      "derajat": "shahih",
+      "kitabSumber": "Shahih Bukhari, Shahih Muslim"
+    },
+    "tags": ["harian", "marah", "perlindungan"],
+    "konteks": "Dibaca ketika marah untuk meredakannya."
+  },
+  {
+    "id": "harian-memakai-pakaian",
+    "judul": "Doa memakai pakaian",
+    "kategori": "doa-harian",
+    "arab": "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا الثَّوْبَ وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ",
+    "latin": "Alhamdulillahilladzi kasani hadzats-tsauba wa razaqanihi min ghairi haulin minni wa la quwwah.",
+    "terjemah": "Segala puji bagi Allah yang memberiku pakaian ini dan memberiku rezeki tanpa daya dan kekuatan dariku.",
+    "pengulangan": null,
+    "sumber": {
+      "jenis": "hadis",
+      "referensi": "HR. Abu Dawud no. 4023, Tirmidzi no. 3458",
+      "derajat": "hasan",
+      "kitabSumber": "Hisnul Muslim"
+    },
+    "tags": ["harian", "pakaian", "syukur"],
+    "keutamaan": "Siapa membacanya, diampuni dosa-dosanya yang telah lalu.",
+    "konteks": "Dibaca ketika mengenakan pakaian, terutama pakaian baru."
+  }
+]

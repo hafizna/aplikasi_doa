@@ -1,4 +1,5 @@
 import { allDoa, getDoaById, thematicDoa } from "@/lib/data/doa";
+import { inferTagsFromText } from "@/lib/keyword-map";
 import type { Doa, HopeKey } from "@/lib/types/doa";
 
 export type { HopeKey };
@@ -56,16 +57,7 @@ function scoreDoa(doa: Doa, tags: string[]) {
 export function getTagsForAnswers(answers: CurationAnswers) {
   const moodTags = moodOptions.find((option) => option.key === answers.mood)?.tags ?? [];
   const hopeTags = hopeOptions.find((option) => option.key === answers.hope)?.tags ?? [];
-  const inferredTags = answers.freeText
-    .toLowerCase()
-    .split(/\s+/)
-    .flatMap((word) => {
-      if (["sakit", "sembuh", "sehat"].includes(word)) return ["kesembuhan"];
-      if (["kerja", "pekerjaan", "uang", "nafkah"].includes(word)) return ["rezeki"];
-      if (["nikah", "jodoh"].includes(word)) return ["jodoh"];
-      if (["anak", "keturunan"].includes(word)) return ["keturunan"];
-      return [];
-    });
+  const inferredTags = inferTagsFromText(answers.freeText);
 
   return Array.from(new Set([...moodTags, ...hopeTags, ...inferredTags]));
 }

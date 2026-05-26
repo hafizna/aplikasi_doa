@@ -4,6 +4,7 @@ import dzikirEveningData from "@/data/doa/dzikir-petang.json";
 import closingData from "@/data/doa/doa-penutup.json";
 import closingTraditionalData from "@/data/doa/doa-penutup-tradisi.json";
 import sunnahClosingData from "@/data/doa/doa-sunnah-penutup.json";
+import dailyData from "@/data/doa/harian.json";
 import seasonalData from "@/data/doa/musiman.json";
 import thematicData from "@/data/doa/tematik.json";
 import type { ClosingStyle, Doa, DzikirFlowStep } from "@/lib/types/doa";
@@ -14,6 +15,7 @@ export const dzikirEvening = dzikirEveningData as Doa[];
 export const closingDoa = closingData as Doa[];
 export const closingTraditionalDoa = closingTraditionalData as Doa[];
 export const sunnahClosingDoa = sunnahClosingData as Doa[];
+export const dailyDoa = dailyData as Doa[];
 export const thematicDoa = thematicData as Doa[];
 export const seasonalDoa = seasonalData as Doa[];
 export const allDoa = [
@@ -23,6 +25,7 @@ export const allDoa = [
   ...closingDoa,
   ...closingTraditionalDoa,
   ...sunnahClosingDoa,
+  ...dailyDoa,
   ...thematicDoa,
   ...seasonalDoa
 ];
