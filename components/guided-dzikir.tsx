@@ -122,7 +122,7 @@ export function GuidedDzikir() {
   };
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-3xl flex-col px-5 py-5 sm:px-8">
+    <main className="mx-auto flex min-h-screen max-w-3xl flex-col px-5 pb-28 pt-5 sm:px-8">
       <header className="sticky top-0 z-10 -mx-5 border-b bg-background/90 px-5 py-4 backdrop-blur sm:-mx-8 sm:px-8">
         <div className="flex items-center justify-between gap-3">
           <Button asChild variant="ghost" size="icon" aria-label="Kembali ke beranda">
@@ -232,14 +232,19 @@ export function GuidedDzikir() {
         <SettingsPanel />
       </section>
 
-      <nav className="sticky bottom-0 -mx-5 mt-auto flex gap-3 border-t bg-background/95 px-5 py-4 backdrop-blur sm:-mx-8 sm:px-8">
-        <Button variant="outline" className="flex-1" onClick={goBack} disabled={stepIndex === 0}>
-          Sebelumnya
-        </Button>
-        <Button className="flex-1" onClick={goNext}>
-          {stepIndex === flow.length - 1 ? "Selesai" : "Lanjut"}
-          <ChevronRight className="h-4 w-4" />
-        </Button>
+      <nav
+        className="fixed inset-x-0 bottom-0 z-20 border-t bg-background/95 px-5 py-4 shadow-calm backdrop-blur"
+        style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
+      >
+        <div className="mx-auto flex max-w-3xl gap-3">
+          <Button variant="outline" className="flex-1" onClick={goBack} disabled={stepIndex === 0}>
+            Sebelumnya
+          </Button>
+          <Button className="flex-1" onClick={goNext}>
+            {stepIndex === flow.length - 1 ? "Selesai" : "Lanjut"}
+            <ChevronRight className="h-4 w-4" />
+          </Button>
+        </div>
       </nav>
     </main>
   );
