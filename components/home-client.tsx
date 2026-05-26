@@ -13,14 +13,13 @@ import {
   Library,
   Moon,
   RotateCcw,
-  Settings,
-  ShieldCheck
+  Settings
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DailyReflectionCard } from "@/components/daily-reflection-card";
 import { SeasonalBanner } from "@/components/seasonal-banner";
-import { dzikirAfterPrayer, seasonalDoa, thematicDoa } from "@/lib/data/doa";
+import { allDoa } from "@/lib/data/doa";
 import { getHijriDisplay } from "@/lib/hijri-calendar";
 import { formatPrayerTime, getNextPrayer } from "@/lib/prayer";
 import { getContextLabel } from "@/lib/quran-context";
@@ -145,42 +144,43 @@ export function HomeClient() {
         </div>
       </header>
 
-      <section className="mt-6 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <div>
-          <p className="text-lg leading-8 text-muted-foreground">
-            Pemandu dzikir setelah sholat yang pelan, terarah, dan menyimpan progress hanya di perangkat ini.
-          </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-            <Button asChild size="lg" className="min-h-12 justify-between">
-              <Link href="/dzikir-setelah-sholat">
-                {hasProgress ? "Lanjutkan Dzikir Setelah Sholat" : "Mulai Dzikir Setelah Sholat"}
-                <ChevronRight className="h-5 w-5" />
-              </Link>
+      <section className="mt-6">
+        <p className="max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
+          Teman ibadah untuk dzikir setelah sholat, doa harian, dan munajat pribadi. Dituntun langkah
+          demi langkah, dan semuanya tetap tersimpan di perangkatmu.
+        </p>
+        <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+          <Button asChild size="lg" className="min-h-12 justify-between sm:min-w-72">
+            <Link href="/dzikir-setelah-sholat">
+              {hasProgress ? "Lanjutkan Dzikir Setelah Sholat" : "Mulai Dzikir Setelah Sholat"}
+              <ChevronRight className="h-5 w-5" />
+            </Link>
+          </Button>
+          {hasProgress ? (
+            <Button variant="outline" size="lg" onClick={() => void resetProgress()}>
+              <RotateCcw className="h-4 w-4" />
+              Mulai ulang
             </Button>
-            {hasProgress ? (
-              <Button variant="outline" size="lg" onClick={() => void resetProgress()}>
-                <RotateCcw className="h-4 w-4" />
-                Mulai ulang
-              </Button>
-            ) : null}
-          </div>
+          ) : null}
         </div>
-        <SeasonalBanner compact />
       </section>
 
-      {quranContext ? (
-        <Link href="/quran" className="group mt-4 block">
-          <Card className="flex items-center justify-between gap-3 border-primary/40 bg-accent/15 p-4 transition group-hover:border-primary/60">
-            <span className="flex items-center gap-3 text-sm font-medium">
-              <BookOpen className="h-5 w-5 text-primary" />
-              {quranContext}
-            </span>
-            <ChevronRight className="h-5 w-5 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-primary" />
-          </Card>
-        </Link>
-      ) : null}
+      <section className="mt-6 grid gap-4 lg:grid-cols-2">
+        <SeasonalBanner compact />
+        {quranContext ? (
+          <Link href="/quran" className="group block">
+            <Card className="flex h-full items-center justify-between gap-3 border-primary/40 bg-accent/15 p-4 transition group-hover:border-primary/60">
+              <span className="flex items-center gap-3 text-sm font-medium">
+                <BookOpen className="h-5 w-5 text-primary" />
+                {quranContext}
+              </span>
+              <ChevronRight className="h-5 w-5 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-primary" />
+            </Card>
+          </Link>
+        ) : null}
+      </section>
 
-      <section className="mt-4">
+      <section className="mt-6">
         <DailyReflectionCard />
       </section>
 
@@ -215,32 +215,9 @@ export function HomeClient() {
         </div>
       </section>
 
-      <section className="mt-10 grid gap-4 sm:grid-cols-2">
-        <Card className="p-5">
-          <ShieldCheck className="h-5 w-5 text-primary" />
-          <h2 className="mt-4 font-semibold">Sumber tercantum</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {dzikirAfterPrayer.length} bacaan dzikir setelah sholat disertai referensi Al-Qur&apos;an atau hadis.
-          </p>
-        </Card>
-        <Card className="p-5">
-          <BookOpen className="h-5 w-5 text-primary" />
-          <h2 className="mt-4 font-semibold">Doa tematik</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {thematicDoa.length} doa pilihan untuk berbagai kebutuhan hati: tobat, rezeki, perlindungan, dan lainnya.
-          </p>
-        </Card>
-        <Card className="p-5 sm:col-span-2">
-          <BookOpen className="h-5 w-5 text-primary" />
-          <h2 className="mt-4 font-semibold">Konten musiman</h2>
-          <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            {seasonalDoa.length} doa musiman tersedia untuk Ramadan, Arafah, Asyura, Jumat, dan puasa sunnah.
-          </p>
-        </Card>
-      </section>
-
-      <footer className="mt-auto pt-10 text-xs leading-5 text-muted-foreground">
-        Hajat, preferensi, dan progresmu tersimpan di perangkat ini saja. Tanpa akun, tanpa pelacakan, tanpa server.
+      <footer className="mt-auto space-y-1 pt-10 text-xs leading-5 text-muted-foreground">
+        <p>{allDoa.length} doa bersumber Al-Qur&apos;an &amp; hadis, setiap bacaan disertai rujukannya.</p>
+        <p>Hajat, preferensi, dan progresmu tersimpan di perangkat ini saja — tanpa akun, iklan, atau pelacakan.</p>
       </footer>
     </main>
   );

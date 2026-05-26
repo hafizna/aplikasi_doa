@@ -128,14 +128,14 @@ export const reflections: Reflection[] = [
   {
     id: "cemas-titipkan",
     kind: "saat-merasa",
-    title: "Cemas bukan aib; ia undangan untuk menitipkan urusan",
+    title: "Cemas itu wajar, dan boleh dititipkan kepada Allah",
     mood: "Khawatir / cemas",
-    summary: "Ada hal yang bisa diikhtiarkan, dan ada bagian yang hanya tenang ketika dititipkan kepada Allah.",
+    summary: "Sebagian urusan bisa kita usahakan, dan sebagian lagi baru terasa tenang setelah kita serahkan kepada Allah.",
     story:
-      "Dalam banyak doa ma'tsur, seorang hamba diajari berlindung dari kelemahan, kesedihan, rasa takut, dan beban yang menekan. Islam tidak menertawakan rapuhnya manusia.",
+      "Lewat banyak doa yang diajarkan Nabi ﷺ, kita justru dituntun untuk berlindung dari rasa gelisah, sedih, takut, dan beban yang menekan. Artinya, rasa rapuh itu bukan sesuatu yang perlu disembunyikan.",
     lesson:
-      "Tenang bukan berarti semua masalah selesai. Tenang bisa berarti tahu kepada siapa urusan dikembalikan setelah ikhtiar dilakukan.",
-    action: "Sebutkan satu hal yang bisa kamu lakukan hari ini, lalu satu hal yang kamu serahkan kepada Allah.",
+      "Tenang bukan berarti semua masalah sudah selesai, tapi tahu ke mana urusan dikembalikan setelah kita berusaha sebaik-baiknya.",
+    action: "Tuliskan satu hal yang bisa kamu lakukan hari ini, lalu satu hal yang kamu lepaskan dan serahkan kepada Allah.",
     source: "HR. Bukhari no. 6369; QS. At-Talaq: 3",
     doaIds: ["tematik-perlindungan-hammi-hazan", "tematik-tobat-yunus", "quran-rabbana-atina"],
     tags: ["cemas", "perlindungan", "tawakal"]
